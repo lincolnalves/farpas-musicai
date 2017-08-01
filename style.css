@@ -1,0 +1,5757 @@
+/* ESTILO FARPAS MUSICAIS */
+
+/* RESET */
+
+*{
+	border:0px;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+html, body {
+	height: 100%;
+
+  }
+  
+@font-face {
+	font-family: "Cuprum";
+	src: url("fonts/Cuprum-Regular.ttf");
+}
+
+@font-face {
+	font-family:"Jackstory";
+	src: url("fonts/JackStory.ttf");
+}
+
+
+/* CONTAINERS GERAIS*/
+
+.container{
+	width: 100%;
+	position: relative;
+    background-repeat: repeat;
+    min-height: 700px;
+ 	overflow-x:hidden;
+}
+
+.first-page{
+	min-height: 100% !important;
+}
+
+.container-iner{
+	width: 1160px;
+	margin: 0 auto;
+    min-height: 700px;
+	position: relative;
+	padding: 0px 20px 0px 20px;
+}
+
+.int-menor{
+	min-height: 650px !important;
+}
+
+.apresentation{
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+
+}
+
+.ident{
+	text-indent: 40px;
+}
+
+.sidofsid{
+	width: 100%;
+	height: 100%;
+}
+
+.sideimg{
+	position: absolute;
+	bottom: -10px;
+}
+
+.sidofsid .container-iner{
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.cont-duo{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	display: flex;
+	flex-flow: row no-wrap;
+	justify-content: stretch;
+	align-items: stretch;
+}
+
+.perfildub {
+	cursor: pointer;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: repeat;
+	display: flex;
+	flex-flow: row no-wrap;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	transition: width 1s;
+	}
+
+.perfildub:hover{
+  width:400%;
+}
+
+.int-side{
+	text-transform: uppercase;
+	font-family: cuprum;
+	color: #fff;
+	width: 300px;
+	height: 260px;
+	font-size: 18px;
+	position: absolute;
+	top:200px;
+}
+
+.text-side{
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+
+#scene{
+	width: 100%;
+	position: relative;
+	bottom: -650px;
+}
+
+
+.image-fundo-apresent{
+	bottom: 0px;
+	left: -50px;
+	position: absolute;
+}
+
+.farpa-box{
+	width: 380px;
+	height: 230px;
+	display: block;
+	position: absolute;
+}
+.titulo-farpa{
+	width: 100%;
+	position: relative;
+	overflow:hidden; 
+
+}
+.titulo-farpa p {
+	background-color: #000;
+	padding:5px 7px 5px 7px;
+	color: #fff;
+	width: 200px;
+	font-family: cuprum;
+	text-transform: uppercase;
+	margin-bottom: 3px;
+	font-size: 18px;
+	font-weight: normal;
+	display: block;
+}
+
+.text-hist{
+	text-align: justify;
+	font-family: cuprum;
+	color: #fff;
+	padding: 20px 5px 5px 0px;
+	text-indent: 50px;
+}
+.img-farpa{
+	position: absolute;
+}
+
+.gifs-videos{
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	display: block;
+	border-radius: 100%;
+	position: absolute;
+	background-color: #000;
+  	transition: all 0.2s linear;
+
+}
+
+.invisible{
+	display: none;
+}
+
+.letras{
+	font-family: cuprum;
+	padding-left: 20px;
+	color: #000;
+}
+
+.letras span{
+	margin-bottom: 10px;
+	display: block;
+}
+
+.biografias{
+	font-family: cuprum;
+	padding: 0px 20px 0px 20px;
+	color: #000;
+	text-align: justify;
+}
+
+.biografias p{
+	text-indent: 30px;
+	margin-top: 30px;
+}
+
+.gifs-videos a{
+	width: 200px;
+	height: 200px;
+	display: block;
+	border-radius: 100%;
+}
+
+.gifs-videos:hover{
+	-moz-box-shadow:1px 0px 48px 2px #000 ;
+    -webkit-box-shadow:1px 0px 48px 2px #000;
+    box-shadow:1px 0px 48px 2px #000;
+}
+
+
+.grupo-click {
+	position: absolute;
+	display: block;
+}
+
+.item-mais {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background-color: #0000A0;
+	border-radius: 100%;
+	background-image: url(images/icons/mais.png);
+	background-repeat: no-repeat;
+	background-position: 8px 7px;
+	transition: all 0.2s linear;
+	position: absolute;
+}
+
+.item-mais a {
+	width: 30px;
+	height: 30px;
+	display: block;
+}
+
+.item-mais a:hover {
+	width: 30px;
+	height: 30px;
+	background-color: #000;
+}
+
+.item-mais:before {
+	display: block;
+	content: '';
+	border-radius: 100%;
+	width: 34px;
+	height: 34px;
+	opacity: 0.6;
+	position: absolute;
+	z-index: 1;
+	transition: all 0.4s linear;
+	top: -5px;
+	right: -5px;
+}
+
+.item-mais:after {
+	display: block;
+	margin-left: 40px;
+	margin-top: 5px;
+	font-family: cuprum;
+	color: #fff;
+	text-transform: uppercase;
+	width: 120px;
+}
+
+.item-mais:hover:before {
+	-webkit-transform: scale(2);
+	-moz-transform: scale(2);
+	-o-transform: scale(2);
+	transform: scale(2);
+	opacity: 0;
+}
+
+
+.cont-caminho{
+	width: 960px;
+	height: 64px;
+	position: absolute;
+	left: 80px;
+	bottom: 50px;
+}
+
+
+.caminho-camaradas .int-caminho{
+	border-top: #76f6c2 2px solid;
+	border-bottom: #76f6c2 2px solid;
+	background-image: url(images/bottom-caminhos-camaradas.png);
+}
+
+.caminho-camaradas .list-caminho li{
+	margin-right: 100px;
+}
+
+.caminho-camaradas .list-caminho li a{
+	color:#76f6c2;
+	text-decoration: none;
+}
+
+.int-caminho{
+	width: 900px;
+	height: 50px;
+	margin: 0 auto;
+	background: #0C0D0F;
+	position: fixed;
+	bottom: 20px;
+	padding-left: 60px;
+	padding-top: 10px;
+	background-repeat: no-repeat;
+	background-position: 0px 50px;
+	z-index: 1000;
+	transition: all 0.8s;
+}
+
+.opacidade{
+	opacity: 0;
+	display: none;
+}
+
+.list-caminho li{
+	text-transform: uppercase;
+	float: left;
+	color:#4dc5c3;
+	font-family: cuprum;
+	display: block;
+	margin-right: 150px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.list-caminho li a{
+	text-decoration: none;
+}
+
+.list-caminho li:last-child{
+	margin-right:0px;
+}
+
+.ponteiro{
+	width: 8px;
+	height: 15px;
+	background-color: #fff;
+	border-radius: 2px;
+	position: absolute;
+	top: -10px;
+	left: 85px;
+	transition: all 0.8s;
+}
+
+/* NAVEGAÇÃO GERAL */
+
+.menu-fix{
+	display: block;
+	width: 132px;
+	height: 300px;
+	position: absolute;
+	right: 20px;
+	top: 200px;
+}
+.menu{
+	list-style: none;
+	display: block;
+	position: fixed;
+	z-index: 1000;
+	margin-left: 102px;
+}
+.menu:before{
+	content: "";
+	width: 4px;
+	height: 250px;
+	background: #000;
+	position: absolute;
+	left: 11px;
+}
+
+.menu li{
+	margin: 0 auto;
+	display: block;
+	width: 26px;
+	height: 26px;
+	margin-bottom: 20px;
+	border-radius: 100%;
+	position: relative;
+	cursor: pointer;
+	font-family: Jackstory;
+	font-size: 16px;
+}
+
+.menu li a{
+	width: 26px;
+	height: 26px;
+	display: block;
+}
+
+
+/* TITULOS MENUS */
+
+.name-menu{
+	list-style: none;
+	display: block;
+	position: fixed;
+	z-index: 1000;
+	overflow: hidden;
+	text-transform: uppercase;
+}
+
+.name-menu li {
+	margin-bottom: 5px;
+	text-align: right;
+	font-family: Jackstory;
+	padding: 3px 5px 3px 5px;
+	color: #fff;
+	position: relative;
+	transition: all 0.2s linear;
+}
+.inicio-name{
+	right: -38px;
+
+}
+.inicio-name-active{
+	right: 0px;
+}
+
+.musicais-name{
+	right: -65px;
+	top:8px;
+}
+
+.musicais-name-active{
+	right: 0px;
+}
+
+.camaradas-name{
+	right: -80px;
+}
+
+.camaradas-name-active{
+	right: 0px;
+	top: 4px;
+}
+
+.eterno-name{
+	right: -150px;
+}
+
+.eterno-name-active{
+	right: 0px;
+}
+
+.linha-name{
+	right: -150px;
+}
+
+.linha-name-active{
+	right: 0px;
+}
+
+.compartilhar-name{
+	right: -95px;
+	top: -4px;
+}
+
+.compartilhar-name-active{
+	right: 0px;
+}
+
+/* CLASSES DO MENUS ATIVAS */
+
+.inicio-item{
+	background: url(images/icons/icon-inicio.png) no-repeat;
+	background-position: 8px -21px;
+	background-position: 8px 5px;
+	background-color: #000;
+	transition: all 0.2s linear;
+}
+
+.inicio-item:hover{
+	background: url(images/icons/icon-inicio.png) no-repeat;
+	background-position: 8px -21px;
+	background-color: #ffa10d;
+}
+
+.inicio-item-active{
+	background: url(images/icons/icon-inicio.png) no-repeat;
+	background-position: 8px -21px;
+	background-color: #ffa10d;
+}
+
+
+.musicais-item{
+	background: url(images/icons/icon-musica.png) no-repeat;
+	background-position: 6px 4px;
+	background-color: #36bcfb;
+	transition: all 0.2s linear;
+}
+
+.musicais-item:hover{
+	background: url(images/icons/icon-musica.png) no-repeat;
+	background-position: 6px -19px;
+	background-color: #000;
+}
+
+.musicais-item-active{
+	background: url(images/icons/icon-musica.png) no-repeat;
+	background-position: 6px -19px;
+	background-color: #000;
+}
+
+.camaradas-item{
+	background: url(images/icons/icon-camaradas.png) no-repeat;
+	background-position: 4px 6px;
+	background-color: #85c869;
+	transition: all 0.2s linear;
+}
+
+.camaradas-item-active{
+	background: url(images/icons/icon-camaradas.png) no-repeat;
+	background-position: 4px -17px;
+	background-color: #000;
+}
+
+.camaradas-item:hover{
+	background: url(images/icons/icon-camaradas.png) no-repeat;
+	background-position: 4px -17px;
+	background-color: #000;
+}
+
+.eterno-item{
+	background: url(images/icons/icon-eterno.png) no-repeat;
+	background-position: 5px 8px;
+	background-color: #ee5a3c;
+	transition: all 0.2s linear;
+}
+
+.eterno-item-active{
+	background: url(images/icons/icon-eterno.png) no-repeat;
+	background-position: 5px -13px;
+	background-color: #000;
+}
+
+.eterno-item:hover{
+	background: url(images/icons/icon-eterno.png) no-repeat;
+	background-position: 5px -13px;
+	background-color: #000;
+}
+
+.linha-item{
+	background: url(images/icons/icon-linha.png) no-repeat;
+	background-position: 6px 4px;
+	background-color: #bf2d16;
+	transition: all 0.2s linear;
+}
+
+.linha-item-active{
+	background: url(images/icons/icon-linha.png) no-repeat;
+	background-position: 6px -18px;
+	background-color: #000;
+}
+
+.linha-item:hover{
+	background: url(images/icons/icon-linha.png) no-repeat;
+	background-position: 6px -18px;
+	background-color: #000;
+}
+
+.compartilhar-item{
+	background: url(images/icons/icon-compartilhar.png) no-repeat;
+	background-position: 7px 5px;
+	background-color: #ffa10d;
+	transition: all 0.2s linear;
+}
+
+.compartilhar-item-active{
+	background: url(images/icons/icon-compartilhar.png) no-repeat;
+	background-position: 7px -16px;
+	background-color: #000;
+}
+
+
+.compartilhar-item:hover{
+	background: url(images/icons/icon-compartilhar.png) no-repeat;
+	background-position: 7px -16px;
+	background-color: #000;
+}
+
+/* HEADER */
+
+header{
+	width: 1160px;
+	height: 20px;
+	margin-left:-580px;
+	left: 50%;
+	top: 40px;
+	position: fixed;
+	z-index: 1000;
+}
+.social-redes{
+	display: block;
+	float: right;
+}
+.social-redes li{
+	width: 22px;
+	height: 22px;
+	border-radius: 100%;
+	background-color: #000;
+	float: left;
+	margin-left: 20px;
+}
+
+.social-redes li a{
+	display: block;
+	width: 22px;
+	height: 22px;
+	overflow: hidden;
+	text-indent: 101%;
+}
+
+.facebok{
+	background: url(images/icons/redes.png) no-repeat;
+	background-position: 4px 2px;
+}
+
+.twitter{
+	background: url(images/icons/redes.png) no-repeat;
+	background-position: -28px 2px;
+}
+
+.instagram{
+	background: url(images/icons/redes.png) no-repeat;
+	background-position: -61px 2px;
+}
+
+.info{
+	display: block;
+	width: 22px;
+	height: 22px;
+	border-radius: 100%;
+	background: url(images/icons/info.png) no-repeat;
+	background-position: 5px 3px;
+	background-color: #000;
+	cursor: pointer;
+}
+
+/* SIDE BAR INFO */
+
+#info-box{
+	width: 300px;
+	height: 100%;
+	position: fixed;
+	z-index: 10000;
+	left: -340px;
+	transition: all 0.8s ease-in-out;
+	padding: 20px;
+	background: url(images/side-fundorepet.jpg) repeat-y;
+	-moz-box-shadow:1px 0px 48px 2px #000 ;
+    -webkit-box-shadow:1px 0px 48px 2px #000;
+    box-shadow:1px 0px 48px 2px #000;
+}
+
+.iner-side{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin-top: 30px;
+}
+
+.close-box{
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	right: 15px;
+	border-radius: 100%;
+	background: url(images/icons/close-side.png) no-repeat;
+	cursor: pointer;
+}
+
+.box-active{
+	left: 0px !important;
+}
+
+#info-box h2{
+	margin: 0 auto;
+	font-family: cuprum;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 15px;
+	width: 200px;
+	margin-top: 20px;
+}
+
+#info-box p{
+	font-family: cuprum;
+	color: #fff;
+	font-weight: normal;
+	font-size: 14px;
+	text-align: justify;
+	padding-bottom: 25px;
+	border-bottom: dashed 1px #fff;
+	width: 250px;
+	margin: 0 auto;
+}
+
+#info-box #equipe{
+	text-align: center;
+}
+
+#sobre-projeto{
+	text-indent: 30px;
+}
+
+
+.bibliografia{
+	margin: 0 auto;
+	width: 150px;
+	height: 30px;
+	border-radius: 5px;
+	border: solid 1px #fff;
+	cursor: pointer;
+	display: block;
+}
+
+
+
+/* INICIO */
+
+#inicio{
+	background-image: url(images/inicio-fundo-repeat.jpg);
+	height: 100%;
+    min-height: 600px;
+    background-repeat: repeat;
+}
+
+#inicio .content-iner{
+	width: 500px;
+	height: 600px;
+	margin-left: -250px;
+	margin-top: -300px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+#inicio h1{
+	margin: 0 auto;
+	width: 360px;
+	height: 187px;
+	margin-bottom: 40px;
+}
+#inicio h1 img{
+	margin: 0 auto;
+	width: 360px;
+}
+.grup-um{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.grup-dois{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.text-intro{
+	width: 440px;
+	font-family: cuprum;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#inicio .seta{
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: url(images/inicio/incon-seta.png) no-repeat;
+	background-position: 17px 14px;
+	background-color: #000;
+	border-radius: 100%;
+	position: absolute;
+	left:50%;
+	bottom: 0px;
+	margin-left:-25px;
+	animation:seta 2s infinite;
+	-webkit-animation:seta 2s infinite;
+	-webkit-animation-name:seta;
+	-webkit-animation-duration:2s;
+	-moz-animation-name:seta;
+	-moz-animation:seta 2s infinite;
+	-moz-animation-duration:2s;
+	-o-animation-name:seta;
+	-o-animation-duration:2s;
+	-ms-animation-name:seta;
+	-ms-animation-duration:2s;
+}
+
+@keyframes seta{
+	0%{		bottom: 40px;}
+	50%{	bottom: 50px;}
+	100%{	bottom: 40px;}
+}
+
+@-webkit-keyframes seta{
+	0%{		bottom: 40px;}
+	50%{	bottom: 50px;}
+	100%{	bottom: 40px;}
+}
+
+@-moz-keyframes seta{
+	0%{		bottom: 40px;}
+	50%{	bottom: 50px;}
+	100%{	bottom: 40px;}
+}
+	
+@-o-keyframes seta{
+	0%{		bottom: 40px;}
+	50%{	bottom: 50px;}
+	100%{	bottom: 40px;}
+}
+
+@-ms-keyframes seta{
+	0%{		bottom: 30px;}
+	50%{	bottom: 50px;}
+	100%{	bottom: 30px;}
+}
+
+/* ideologia-musical */
+#ideologia-musical{
+	background-image: url(images/musical-fundo-repeat.jpg);
+}
+
+#ideologia-musical .apresentation h1{
+	font-family: Jackstory;
+	color: #fff;
+	font-size: 24px;
+	font-weight: normal;
+	margin-top:100px;
+	margin-left: 100px;
+	margin-bottom: 50px; 
+}
+
+#ideologia-musical .apresentation p{
+	width: 365px;
+	text-align: justify;
+	font-family: cuprum;
+	color: #fff;
+	float: left;
+	margin-left: 100px;
+	font-size: 16px;
+}
+
+.caminho-musical .int-caminho{
+	border-top: #4dc5c3 2px solid;
+	border-bottom: #4dc5c3 2px solid;
+	background-image: url(images/bottom-caminhos.png);
+}
+
+.caminho-musical .list-caminho li a{
+	color:#4dc5c3;
+	text-decoration: none;
+}
+
+#ideologia-musical .item-mais{
+	background-color: #4dc5c3;
+}
+#ideologia-musical .item-mais:hover{
+background-color: #006699;
+}
+#ideologia-musical .item-mais:before{
+	border: solid 3px #338786;
+}
+
+
+/* desafinados */
+
+#desafinados .farpa-box:first-child {
+	top: 0px;
+	left: 80px;
+	width: 435px;
+}
+
+#desafinados .farpa-box:nth-child(3){
+	top: 290px;
+	left: 600px;
+	width: 450px;
+}
+
+.aline-right{
+direction: rtl;
+}
+
+#desafinados .img-farpa{
+	top: 0px;
+	right: 2000px;
+}
+
+#desafinados .farpa-box:nth-child(1) .farpa:nth-child(1){
+	width: 141px;
+}
+
+#desafinados .farpa-box:nth-child(1) .farpa:nth-child(2){
+	width: 96px;
+}
+
+#desafinados .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 228px;
+}
+#desafinados .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 250px;
+}
+#desafinados .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 130px;
+}
+
+#gif-desafinados{
+	background-image: url(images/icons/play.png), url(gifs-videos/desafinados.gif);
+	background-position: 85px 78px, -21px -10px;
+	background-repeat: no-repeat;
+	top: 300px;
+	left: 200px;
+	cursor: pointer
+}
+
+#desafinado-1{
+left: 320px;
+top: 302px;	
+}
+
+#desafinado-2{
+left: 358px;
+top: 350px;
+}
+
+#desafinado-1:after{
+content: 'Letra Completa';
+}
+
+#desafinado-2:after{
+content: 'Sobre Tom Jobim';
+}
+
+/* desafinados2 */
+
+#desafinados2 .farpa-box:first-child {
+	top: 0px;
+	left: 110px;
+	width: 302px;
+}
+
+#desafinados2 .farpa-box:nth-child(2) {
+	top: 90px;
+	left: 680px;
+	height: 110px;
+}
+
+#desafinados2 .farpa-box:nth-child(3) {
+	top: 350px;
+	left: 200px;
+	height: 110px;
+}
+
+
+.aline-right{
+direction: rtl;
+}
+
+
+#desafinados2 .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 262px;
+}
+
+#desafinados2 .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 302px;
+}
+
+#desafinados2 .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 175px;
+}
+
+#desafinados2 .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 335px;
+}
+#desafinados2 .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 244px;
+}
+#desafinados2 .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 114px;
+}
+
+#gif-desafinados2{
+	background-image: url(images/icons/play.png), url(gifs-videos/desafinados2.gif);
+	background-position: 85px 78px, -1px -29px;
+	background-repeat: no-repeat;
+	top: 300px;
+	left: 600px;
+	cursor: pointer
+}
+
+#gif-desafinados3{
+	background-image: url(images/icons/play.png), url(gifs-videos/desafinados3.gif);
+	background-position: 85px 78px, -21px -91px;
+	background-repeat: no-repeat;
+	top: 20px;
+	left: 450px;
+	cursor: pointer
+}
+
+#desafinado-3{
+left: 740px;
+top: 320px;	
+}
+
+#desafinado-4{
+left: 580px;
+top: 30px;
+}
+
+#desafinado-3:after{
+content: 'Letra Completa';
+}
+
+#desafinado-4:after{
+content: 'Letra Completa';
+}
+
+
+/* ARGUMENTO */
+
+#imagem-argumento{
+	top: 0px;
+	left: 90px;
+}
+
+#argumento .farpa-box:first-child {
+	top: 110px;
+	left: 400px;
+	width: 444px;
+}
+
+#argumento .farpa-box:nth-child(2) {
+	top: 0px;
+	left: 400px;
+	height: 110px;
+}
+
+#argumento .farpa-box:nth-child(3) {
+	top: 350px;
+	left: 600px;
+	height: 110px;
+}
+
+
+
+#argumento .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 262px;
+}
+
+#argumento .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 227px;
+}
+
+#argumento .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 151px;
+}
+
+#argumento .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 249px;
+}
+#argumento .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 183px;
+}
+#argumento .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 167px;
+}
+
+#gif-argumento{
+	background-image: url(images/icons/play.png), url(gifs-videos/argumento.gif);
+	background-position: 85px 78px, -77px -6px;
+	background-repeat: no-repeat;
+	top: 320px;
+	left: 260px;
+	cursor: pointer
+}
+
+
+#argumento-item{
+left: 400px;
+top: 340px;	
+}
+
+#argumento-item2{
+left: 420px;
+top: 400px;
+}
+
+#argumento-item:after{
+content: 'Letra Completa';
+}
+
+#argumento-item2:after{
+content: 'Sobre paulinho';
+}
+
+/* Nao me importa nada*/
+
+#imagem-naomeimporta{
+	top: 0px;
+	right: 222px;
+}
+
+#naomeimporta .farpa-box:first-child {
+	top: 100px;
+	left: 170px;
+	width: 455px;
+}
+
+#naomeimporta .farpa-box:nth-child(2) {
+	top: 30px;
+	left: 250px;
+	height: 110px;
+}
+
+#naomeimporta .farpa-box:nth-child(3) {
+	top: 350px;
+	left: 80px;
+	height: 110px;
+}
+
+
+
+#naomeimporta .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 295px;
+}
+
+#naomeimporta .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 278px;
+}
+
+
+#naomeimporta .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 249px;
+}
+#naomeimporta .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 284px;
+}
+#naomeimporta .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 303px;
+}
+#naomeimporta .farpa-box:nth-child(3) .farpa:nth-child(4){
+	width: 303px;
+}
+
+#gif-naomeimporta{
+	background-image: url(images/icons/play.png), url(gifs-videos/naomeimporta.gif);
+	background-position: 85px 78px, -77px -6px;
+	background-repeat: no-repeat;
+	top: 320px;
+	left: 590px;
+	cursor: pointer
+}
+
+
+#naomeimporta-item{
+left: 730px;
+top: 340px;	
+}
+
+#naomeimporta-item2{
+left: 755px;
+top: 400px;
+}
+
+#naomeimporta-item:after{
+content: 'Letra Completa';
+}
+
+#naomeimporta-item2:after{
+content: 'Sobre Benito';
+}
+
+/* raul vs caetano */
+
+#raulvscaetano .perfildub:nth-child(1){
+	background-image: url(images/musicais/raul-fundo-repeat.jpg);
+}
+
+#raulvscaetano .perfildub:nth-child(2){
+	background-image: url(images/musicais/caetano-fundo-repeat.jpg);
+}
+
+#caetano-side{
+	right: 200px;
+}
+
+
+#raul-side{
+	left: 200px;
+}
+
+#perfilraul .int-side{
+	left: 750px;
+}
+
+#perfilcaetano .int-side{
+	right: 700px;
+}
+
+
+/* TAPA NA CARA */
+
+#imagem-tapanacara{
+	top: 50px;
+	left: 90px;
+}
+
+#tapanacara .farpa-box:first-child {
+	top: 160px;
+	left: 470px;
+	width: 400px;
+}
+
+#tapanacara .farpa-box:nth-child(2) {
+	top: 100px;
+	left: 470px;
+	height: 110px;
+}
+
+#tapanacara .farpa-box:nth-child(3) {
+	top: 350px;
+	left: 600px;
+	height: 110px;
+}
+
+#tapanacara .farpa-box:nth-child(4) {
+	top: 420px;
+	left: 605px;
+	height: 110px;
+}
+
+
+#tapanacara .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 155px;
+}
+
+#tapanacara .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 183px;
+}
+
+#tapanacara .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 117px;
+}
+#tapanacara .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 143px;
+}
+
+#gif-tapanacara{
+	background-image: url(images/icons/play.png), url(gifs-videos/tapanacara.gif);
+	background-position: 85px 78px, -21px -60px;
+	background-repeat: no-repeat;
+	top: 360px;
+	left: 210px;
+	cursor: pointer
+}
+
+
+#tapanacara-item{
+left: 350px;
+top: 380px;	
+}
+
+#tapanacara-item2{
+left: 370px;
+top: 430px;
+}
+
+#tapanacara-item:after{
+content: 'Letra Completa';
+}
+
+#tapanacara-item2:after{
+content: 'Sobre Raul';
+}
+
+
+/* ROCK ROLL */
+
+#imagem-rockroll{
+	top: 50px;
+	right: 210px;
+}
+
+#rockroll .farpa-box:first-child {
+	top: 60px;
+	left: 90px;
+	width: 350px;
+}
+
+#rockroll .farpa-box:nth-child(2) {
+	top: 0px;
+	left: 90px;
+	height: 110px;
+}
+
+#rockroll .farpa-box:nth-child(3) {
+	top: 300px;
+	left: 600px;
+	height: 110px;
+}
+
+
+
+#rockroll .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 151px;
+}
+
+#rockroll .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 183px;
+}
+
+#rockroll .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 163px;
+}
+#rockroll .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 193px;
+}
+#rockroll .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 226px;
+}
+#rockroll .farpa-box:nth-child(3) .farpa:nth-child(4){
+	width: 173px;
+}
+
+#gif-rockroll{
+	background-image: url(images/icons/play.png), url(gifs-videos/rockroll.gif);
+	background-position: 85px 78px, -21px -60px;
+	background-repeat: no-repeat;
+	top: 280px;
+	left: 210px;
+	cursor: pointer
+}
+
+
+#rockroll-item{
+left: 350px;
+top: 300px;	
+}
+
+#rockroll-item2{
+left: 370px;
+top: 350px;
+}
+
+#rockroll-item:after{
+content: 'Letra Completa';
+}
+
+#rockroll-item2:after{
+content: 'Sobre Raul';
+}
+
+
+/* rock raul */
+
+#imagem-rockraul{
+	top: -20px;
+	right: 222px;
+}
+
+#rockraul .farpa-box:first-child {
+	top: 140px;
+	left: 200px;
+	width: 400px;
+}
+
+#rockraul .farpa-box:nth-child(2) {
+	top: 30px;
+	left: 220px;
+	height: 110px;
+}
+
+#rockraul .farpa-box:nth-child(3) {
+	top: 350px;
+	left: 80px;
+	height: 110px;
+}
+
+
+
+#rockraul .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 175px;
+}
+
+#rockraul .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 205px;
+}
+
+#rockraul .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 134px;
+}
+
+#rockraul .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 206px;
+}
+#rockraul .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 145px;
+}
+#rockraul .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 165px;
+}
+#rockraul .farpa-box:nth-child(3) .farpa:nth-child(4){
+	width: 303px;
+}
+
+#gif-rockraul{
+	background-image: url(images/icons/play.png), url(gifs-videos/rockraul.gif);
+	background-position: 85px 78px, -43px -49px;
+	background-repeat: no-repeat;
+	top: 320px;
+	left: 590px;
+	cursor: pointer
+}
+
+
+#rockraul-item{
+left: 730px;
+top: 340px;	
+}
+
+#rockraul-item2{
+left: 755px;
+top: 400px;
+}
+
+#rockraul-item:after{
+content: 'Letra Completa';
+}
+
+#rockraul-item2:after{
+content: 'Sobre Caetano';
+}
+
+
+/* MANO CAETANO */
+
+#imagem-manocaetano{
+	top: 40px;
+	left: 90px;
+}
+
+#manocaetano .farpa-box:first-child {
+	top: 130px;
+	left: 470px;
+	width: 400px;
+}
+
+#manocaetano .farpa-box:nth-child(2) {
+	top: 30px;
+	left: 470px;
+	height: 110px;
+}
+
+#manocaetano .farpa-box:nth-child(3) {
+	top: 380px;
+	left: 600px;
+	height: 110px;
+}
+
+#manocaetano .farpa-box:nth-child(4) {
+	top: 420px;
+	left: 605px;
+	height: 110px;
+}
+
+
+#manocaetano .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 222px;
+}
+
+#manocaetano .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 257px;
+}
+
+#manocaetano .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 280px;
+}
+
+#manocaetano .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 269px;
+}
+#manocaetano .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 277px;
+}
+
+#manocaetano .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 202px;
+}
+
+#manocaetano .farpa-box:nth-child(3) .farpa:nth-child(4){
+	width: 220px;
+}
+
+#gif-manocaetano{
+	background-image: url(images/icons/play.png), url(gifs-videos/manocaetano.gif);
+	background-position: 85px 78px, -18px -20px;
+	background-repeat: no-repeat;
+	top: 360px;
+	left: 210px;
+	cursor: pointer
+}
+
+
+#manocaetano-item{
+left: 350px;
+top: 380px;	
+}
+
+#manocaetano-item2{
+left: 370px;
+top: 430px;
+}
+
+#manocaetano-item:after{
+content: 'Letra Completa';
+}
+
+#manocaetano-item2:after{
+content: 'Sobre lobao';
+}
+
+
+/* lobao tem razao */
+
+#imagem-lobaotemrazao{
+	top: 0px;
+	right: 152px;
+}
+
+#lobaotemrazao .farpa-box:first-child {
+	top: 100px;
+	left: 140px;
+	width: 380px;
+}
+
+#lobaotemrazao .farpa-box:nth-child(2) {
+	top: 20px;
+	left: 140px;
+	height: 110px;
+}
+
+#lobaotemrazao .farpa-box:nth-child(3) {
+	top: 350px;
+	left: 80px;
+	height: 110px;
+}
+
+
+
+#lobaotemrazao .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 278px;
+}
+
+#lobaotemrazao .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 237px;
+}
+
+#lobaotemrazao .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 271px;
+}
+#lobaotemrazao .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 363px;
+}
+#lobaotemrazao .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 196px;
+}
+
+
+#gif-lobaotemrazao{
+	background-image: url(images/icons/play.png), url(gifs-videos/lobaotemrazao.gif);
+	background-position: 85px 78px, -43px 0px;
+	background-repeat: no-repeat;
+	top: 320px;
+	left: 590px;
+	cursor: pointer
+}
+
+
+#lobaotemrazao-item{
+left: 730px;
+top: 340px;	
+}
+
+#lobaotemrazao-item2{
+left: 755px;
+top: 400px;
+}
+
+#lobaotemrazao-item:after{
+content: 'Letra Completa';
+}
+
+#lobaotemrazao-item2:after{
+content: 'Sobre Caetano';
+}
+
+
+/* LATINO AMERICANO */
+
+#imagem-latinoamericano{
+	top: 40px;
+	left: 90px;
+}
+
+#latinoamericano .farpa-box:first-child {
+	top: 130px;
+	left: 470px;
+	width: 518px;
+}
+
+#latinoamericano .farpa-box:nth-child(2) {
+	top: 30px;
+	left: 470px;
+	height: 110px;
+}
+
+#latinoamericano .farpa-box:nth-child(3) {
+	top: 380px;
+	left: 600px;
+	height: 110px;
+}
+
+#latinoamericano .farpa-box:nth-child(4) {
+	top: 420px;
+	left: 605px;
+	height: 110px;
+}
+
+
+#latinoamericano .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 162px;
+}
+
+#latinoamericano .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 288px;
+}
+
+#latinoamericano .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 321px;
+}
+
+#latinoamericano .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 164px;
+}
+#latinoamericano .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 156px;
+}
+
+#latinoamericano .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 116px;
+}
+
+#latinoamericano .farpa-box:nth-child(3) .farpa:nth-child(4){
+	width: 177px;
+}
+
+#gif-latinoamericano{
+	background-image: url(images/icons/play.png), url(gifs-videos/latinoamericano.gif);
+	background-position: 85px 78px, -18px 0px;
+	background-repeat: no-repeat;
+	top: 360px;
+	left: 210px;
+	cursor: pointer
+}
+
+
+#latinoamericano-item{
+left: 350px;
+top: 380px;	
+}
+
+#latinoamericano-item2{
+left: 370px;
+top: 430px;
+}
+
+#latinoamericano-item:after{
+content: 'Letra Completa';
+}
+
+#latinoamericano-item2:after{
+content: 'Sobre belchior';
+}
+
+
+/* latinoamericano2 */
+
+#latinoamericano2 .farpa-box:first-child {
+	top: 0px;
+	left: 65px;
+	width: 350px;
+}
+
+#latinoamericano2 .farpa-box:nth-child(2) {
+	top: 90px;
+	left: 680px;
+	height: 110px;
+}
+
+#latinoamericano2 .farpa-box:nth-child(3) {
+	top: 350px;
+	right: 640px;
+	height: 110px;
+}
+
+
+.aline-right{
+direction: rtl;
+}
+
+
+#latinoamericano2 .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 296px;
+}
+
+#latinoamericano2 .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 227px;
+}
+
+#latinoamericano2 .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 243px;
+}
+
+#latinoamericano2 .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 323px;
+}
+#latinoamericano2 .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 158px;
+}
+#latinoamericano2 .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 253px;
+}
+
+#gif-latinoamericano2{
+	background-image: url(images/icons/play.png), url(gifs-videos/latinoamericano3.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 300px;
+	left: 600px;
+	cursor: pointer
+}
+
+#gif-latinoamericano3{
+	background-image: url(images/icons/play.png), url(gifs-videos/latinoamericano2.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 20px;
+	left: 450px;
+	cursor: pointer
+}
+
+#latinoamericano3{
+left: 740px;
+top: 320px;	
+}
+
+#latinoamericano4{
+left: 580px;
+top: 30px;
+}
+
+#latinoamericano3:after{
+content: 'Letra Completa';
+}
+
+#latinoamericano4:after{
+content: 'Letra Completa';
+}
+
+
+/* pros-camaradas */
+#pros-camaradas{
+	background-image: url(images/macaradas-fundo-repeat.jpg);
+}
+
+#pros-camaradas .apresentation img{
+	position: absolute;
+}
+
+
+
+
+#pros-camaradas .apresentation h1{
+	font-family: Jackstory;
+	color: #fff;
+	font-size: 24px;
+	font-weight: normal;
+	margin-top:100px;
+	margin-left: 100px;
+	margin-bottom: 50px; 
+}
+
+#pros-camaradas .apresentation p{
+	width: 365px;
+	text-align: justify;
+	font-family: cuprum;
+	color: #fff;
+	float: left;
+	margin-left: 100px;
+	font-size: 16px;
+}
+
+#pros-camaradas .item-mais{
+	background-color: #85c769;
+}
+#pros-camaradas .item-mais:hover{
+background-color: #084502;
+}
+#pros-camaradas .item-mais:before{
+	border: solid 3px #99cc66;
+}
+
+#garrafa1{
+	-webkit-animation:garrafavoa 20s infinite;
+    -webkit-animation-timing-function: linear;
+	-webkit-animation-name:garrafavoa;
+	-webkit-animation-duration:20s;
+    -moz-animation-timing-function: linear;
+	-moz-animation-name:garrafavoa;
+	-moz-animation:garrafavoa 20s infinite;
+	-moz-animation-duration:20s;
+	-o-animation-name:garrafavoa;
+	-o-animation-timing-function: linear;
+	-o-animation-duration:20s;
+    -ms-animation-timing-function: linear;
+	-ms-animation-name:garrafavoa;
+	-ms-animation-duration:20s;
+}
+
+#garrafa2{
+	-webkit-animation:garrafavoa2 20s infinite;
+    -webkit-animation-timing-function: linear;
+	-webkit-animation-name:garrafavoa2;
+	-webkit-animation-duration:20s;
+    -moz-animation-timing-function: linear;
+	-moz-animation-name:garrafavoa2;
+	-moz-animation:garrafavoa2 20s infinite;
+	-moz-animation-duration:20s;
+	-o-animation-name:garrafavoa2;
+	-o-animation-timing-function: linear;
+	-o-animation-duration:20s;
+    -ms-animation-timing-function: linear;
+	-ms-animation-name:garrafavoa2;
+	-ms-animation-duration:20s;
+}
+
+#cadeira1{
+	-webkit-animation:cadeiravoa 30s infinite;
+    -webkit-animation-timing-function: linear;
+	-webkit-animation-name:cadeiravoa;
+	-webkit-animation-duration:30s;
+    -moz-animation-timing-function: linear;
+	-moz-animation-name:cadeiravoa;
+	-moz-animation:cadeiravoa 30s infinite;
+	-moz-animation-duration:30s;
+	-o-animation-name:cadeiravoa;
+	-o-animation-timing-function: linear;
+	-o-animation-duration:30s;
+    -ms-animation-timing-function: linear;
+	-ms-animation-name:cadeiravoa;
+	-ms-animation-duration:30s;
+}
+
+#cadeira2{
+	-webkit-animation:cadeiravoa2 30s infinite;
+    -webkit-animation-timing-function: linear;
+	-webkit-animation-name:cadeiravoa2;
+	-webkit-animation-duration:30s;
+    -moz-animation-timing-function: linear;
+	-moz-animation-name:cadeiravoa2;
+	-moz-animation:cadeiravoa 30s infinite;
+	-moz-animation-duration:30s;
+	-o-animation-name:cadeiravoa2;
+	-o-animation-timing-function: linear;
+	-o-animation-duration:30s;
+    -ms-animation-timing-function: linear;
+	-ms-animation-name:cadeiravoa2;
+	-ms-animation-duration:30s;
+}
+
+
+@-webkit-keyframes garrafavoa{
+	0%{		
+		left: -100px;
+		bottom: 200px;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	50%{
+	}
+
+	100%{	
+		left: 1400px;
+		bottom: 300px;
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes garrafavoa{
+	0%{		
+		left: -100px;
+		bottom: 200px;
+		-moz-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	50%{
+	}
+
+	100%{	
+		left: 1400px;
+		bottom: 300px;
+		-moz-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+
+
+@-webkit-keyframes garrafavoa2{
+	0%{		
+		right: -100px;
+		bottom: 300px;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	50%{
+	}
+
+	100%{	
+		right: 1400px;
+		bottom: 200px;
+		-webkit-transform: rotate(-360deg);
+		transform: rotate(-360deg);
+	}
+}
+
+@-moz-keyframes garrafavoa2{
+	0%{		
+		right: -100px;
+		bottom: 300px;
+		-moz-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	50%{
+	}
+
+	100%{	
+		right: 1400px;
+		bottom: 200px;
+		-moz-transform: rotate(-360deg);
+		transform: rotate(-360deg);
+	}
+}
+
+@-webkit-keyframes cadeiravoa{
+	0%{		
+		left: -200px;
+		bottom: 200px;
+		-ms-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	50%{
+	}
+
+	100%{	
+		left: 1800px;
+		bottom: 200px;
+		-ms-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes cadeiravoa{
+	0%{		
+		left: -200px;
+		bottom: 200px;
+		-ms-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	50%{
+	}
+
+	100%{	
+		left: 1800px;
+		bottom: 200px;
+		-ms-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+
+@-webkit-keyframes cadeiravoa2{
+	0%{		
+		right: -200px;
+		bottom: 200px;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	50%{
+	}
+
+	100%{	
+		right: 1400px;
+		bottom: 300px;
+		-webkit-transform: rotate(-560deg);
+		transform: rotate(-560deg);
+	}
+}
+
+@-moz-keyframes cadeiravoa2{
+	0%{		
+		right: -200px;
+		bottom: 200px;
+		-moz-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	50%{
+	}
+
+	100%{	
+		right: 1400px;
+		bottom: 300px;
+		-moz-transform: rotate(-560deg);
+		transform: rotate(-560deg);
+	}
+}
+
+
+
+
+/* quem sao*/
+
+#imagem-quemsao{
+	top: 0px;
+	right: 160px;
+}
+
+#quemsao .farpa-box:first-child {
+	top: 140px;
+	left: 75px;
+	width: 465px;
+}
+
+#quemsao .farpa-box:nth-child(2) {
+	top: 30px;
+	left: 75px;
+	height: 110px;
+}
+
+#quemsao .farpa-box:nth-child(3) {
+	top: 350px;
+	right: 150px;
+	height: 110px;
+}
+
+
+#quemsao .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 240px;
+}
+
+#quemsao .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 219px;
+}
+
+#quemsao .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 271px;
+}
+
+#quemsao .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 257px;
+}
+
+#quemsao .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 153px;
+}
+#quemsao .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 127px;
+}
+
+#gif-quemsao{
+	background-image: url(images/icons/play.png), url(gifs-videos/quemsao.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 320px;
+	left: 190px;
+	cursor: pointer
+}
+
+
+#quemsao-item{
+left: 330px;
+top: 340px;	
+}
+
+#quemsao-item2{
+left: 355px;
+top: 400px;
+}
+
+#quemsao-item:after{
+content: 'Letra Completa';
+}
+
+#quemsao-item2:after{
+content: 'Sobre Sinhô';
+}
+
+
+/* ja te digo */
+
+#imagem-jatedigo{
+	top: -30px;
+	right: 250px;
+}
+
+#jatedigo .farpa-box:first-child {
+	top: 100px;
+	left: 75px;
+	width: 450px;
+}
+
+#jatedigo .farpa-box:nth-child(2) {
+	top: 20px;
+	left: 140px;
+	height: 110px;
+}
+
+#jatedigo .farpa-box:nth-child(3) {
+	top: 300px;
+	left: 80px;
+	height: 110px;
+}
+
+
+
+#jatedigo .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 160px;
+}
+
+#jatedigo .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 117px;
+}
+
+#jatedigo .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 221px;
+}
+#jatedigo .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 328px;
+}
+#jatedigo .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 154px;
+}
+#jatedigo .farpa-box:nth-child(3) .farpa:nth-child(4){
+	width: 186px;
+}
+
+
+#gif-jatedigo{
+	background-image: url(images/icons/play.png), url(gifs-videos/jatedigo.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 320px;
+	left: 590px;
+	cursor: pointer
+}
+
+
+#jatedigo-item{
+left: 730px;
+top: 340px;	
+}
+
+#jatedigo-item2{
+left: 755px;
+top: 400px;
+}
+
+#jatedigo-item:after{
+content: 'Letra Completa';
+}
+
+#jatedigo-item2:after{
+content: 'Pixinginha';
+}
+
+
+/* pe de anjo */
+
+#pedeanjo .farpa-box:first-child {
+	top: 10px;
+	left: 70px;
+	width: 350
+}
+
+#pedeanjo .farpa-box:nth-child(2) {
+	top: 120px;
+	right: 100px;
+	height: 110px;
+}
+
+#pedeanjo .farpa-box:nth-child(3) {
+	top: 350px;
+	left: 200px;
+	height: 110px;
+}
+
+
+.aline-right{
+direction: rtl;
+}
+
+
+#pedeanjo .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 190px;
+}
+
+#pedeanjo .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 164px;
+}
+
+#pedeanjo .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 277px;
+}
+
+#pedeanjo .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 256px;
+}
+#pedeanjo .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 135px;
+}
+#pedeanjo .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 277px;
+}
+
+#gif-falameuloro{
+	background-image: url(images/icons/play.png), url(gifs-videos/falameulouro.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 300px;
+	left: 600px;
+	cursor: pointer
+}
+
+#gif-pedeanjo{
+	background-image: url(images/icons/play.png), url(gifs-videos/pedeanjo.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 60px;
+	left: 500px;
+	cursor: pointer
+}
+
+#falameuloro-item{
+left: 740px;
+top: 320px;	
+}
+
+#pedeanjo-item{
+left: 630px;
+top: 70px;
+}
+
+#falameuloro-item:after{
+content: 'Letra Completa';
+}
+
+#pedeanjo-item:after{
+content: 'Letra Completa';
+}
+
+/* arnesto */
+
+#imagem-arnesto{
+	top: 40px;
+	left: 70px;
+}
+
+#arnesto .farpa-box:first-child {
+	top: 140px;
+	left: 470px;
+	width: 460px;
+}
+
+#arnesto .farpa-box:nth-child(2) {
+	top: 30px;
+	left: 470px;
+	height: 110px;
+}
+
+#arnesto .farpa-box:nth-child(3) {
+	top: 320px;
+	left: 600px;
+	height: 110px;
+}
+
+#arnesto .farpa-box:nth-child(4) {
+	top: 420px;
+	left: 605px;
+	height: 110px;
+}
+
+
+#arnesto .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 300px;
+}
+
+#arnesto .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 225px;
+}
+
+#arnesto .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 206px;
+}
+
+#arnesto .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 185px;
+}
+#arnesto .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 269px;
+}
+#arnesto .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 256px;
+}
+
+#gif-arnesto{
+	background-image: url(images/icons/play.png), url(gifs-videos/arnesto.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 340px;
+	left: 170px;
+	cursor: pointer
+}
+
+
+#arnesto-item{
+left: 300px;
+top: 350px;	
+}
+
+#arnesto-item2{
+left: 330px;
+top: 400px;
+}
+
+#arnesto-item:after{
+content: 'Letra Completa';
+}
+
+#arnesto-item2:after{
+content: 'Sobre Adoniran';
+}
+
+
+/* receita pra virar */
+
+#imagem-receitapravirar{
+	top: 0px;
+	right: 200px;
+}
+
+#receitapravirar .farpa-box:first-child {
+	top: 100px;
+	left: 75px;
+	width: 465px;
+}
+
+#receitapravirar .farpa-box:nth-child(2) {
+	top: 30px;
+	left: 75px;
+	height: 110px;
+}
+
+#receitapravirar .farpa-box:nth-child(3) {
+	top: 300px;
+	right: 220px;
+	height: 110px;
+}
+
+#receitapravirar .farpa-box:nth-child(4) {
+	top: 370px;
+	right: 215px;
+	height: 120px;
+	width: 420px;
+}
+
+
+#receitapravirar .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 332px;
+}
+
+#receitapravirar .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 166px;
+}
+
+#receitapravirar .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 225px;
+}
+
+#receitapravirar .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 254px;
+}
+
+#gif-receitapravirar{
+	background-image: url(images/icons/play.png), url(gifs-videos/receitapravirar.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 320px;
+	left: 190px;
+	cursor: pointer
+}
+
+
+#receitapravirar-item{
+left: 330px;
+top: 340px;	
+}
+
+#receitapravirar-item2{
+left: 355px;
+top: 400px;
+}
+
+#receitapravirar-item:after{
+content: 'Letra Completa';
+}
+
+#receitapravirar-item2:after{
+content: 'Sobre Chico';
+}
+
+/* amorena */
+
+#imagem-amorena{
+	top: 40px;
+	left: 70px;
+}
+
+#amorena .farpa-box:first-child {
+	top: 100px;
+	left: 470px;
+	width: 460px;
+}
+
+#amorena .farpa-box:nth-child(2) {
+	top: 30px;
+	left: 470px;
+	height: 110px;
+}
+
+#amorena .farpa-box:nth-child(3) {
+	top: 250px;
+	left: 600px;
+	height: 110px;
+}
+
+#amorena .farpa-box:nth-child(4) {
+	top: 355px;
+	left: 605px;
+	height: 110px;
+}
+
+
+#amorena .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 200px;
+}
+
+#amorena .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 245px;
+}
+
+#amorena .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 150px;
+}
+#amorena .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 253px;
+}
+#amorena .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 84px;
+}
+
+#gif-amorena{
+	background-image: url(images/icons/play.png), url(gifs-videos/amorena.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 340px;
+	left: 170px;
+	cursor: pointer
+}
+
+
+#amorena-item{
+left: 300px;
+top: 350px;	
+}
+
+#amorena-item2{
+left: 330px;
+top: 400px;
+}
+
+#amorena-item:after{
+content: 'Letra Completa';
+}
+
+#amorena-item2:after{
+content: 'Sobre Ataulfo';
+}
+
+
+/* conte o caso */
+
+#imagem-conteocaso{
+	top: 0px;
+	right: 200px;
+}
+
+#conteocaso .farpa-box:first-child {
+	top: 100px;
+	left: 75px;
+	width: 440px;
+}
+
+#conteocaso .farpa-box:nth-child(2) {
+	top: 30px;
+	left: 75px;
+	height: 110px;
+}
+
+#conteocaso .farpa-box:nth-child(3) {
+	top: 300px;
+	right: 220px;
+	height: 110px;
+}
+
+#conteocaso .farpa-box:nth-child(4) {
+	top: 370px;
+	right: 215px;
+	height: 120px;
+	width: 420px;
+}
+
+
+#conteocaso .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 167px;
+}
+
+#conteocaso .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 244px;
+}
+
+#conteocaso .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 207px;
+}
+
+#conteocaso .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 183px;
+}
+
+#conteocaso .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 258px;
+}
+
+#gif-conteocaso{
+	background-image: url(images/icons/play.png), url(gifs-videos/conteocaso.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 320px;
+	left: 190px;
+	cursor: pointer
+}
+
+
+#conteocaso-item{
+left: 330px;
+top: 340px;	
+}
+
+#conteocaso-item2{
+left: 355px;
+top: 400px;
+}
+
+#conteocaso-item:after{
+content: 'Letra Completa';
+}
+
+#conteocaso-item2:after{
+content: 'Sobre Mirabeau';
+}
+
+
+/* o vento */
+
+#imagem-ovento{
+	top: 40px;
+	left: 70px;
+}
+
+#ovento .farpa-box:first-child {
+	top: 70px;
+	right: 220px;
+	width: 460px;
+}
+
+#ovento .farpa-box:nth-child(2) {
+	top: 0px;
+	right: 300px;
+	height: 110px;
+}
+
+#ovento .farpa-box:nth-child(3) {
+	top: 280px;
+	left: 600px;
+	height: 110px;
+}
+
+#ovento .farpa-box:nth-child(4) {
+	top: 385px;
+	left: 605px;
+	height: 110px;
+}
+
+
+#ovento .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 164px;
+}
+
+#ovento .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 186px;
+}
+
+#ovento .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 238px;
+}
+#ovento .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 283px;
+}
+#ovento .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 221px;
+}
+
+#gif-ovento{
+	background-image: url(images/icons/play.png), url(gifs-videos/durocomduro.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 300px;
+	left: 170px;
+	cursor: pointer
+}
+
+
+#ovento-item{
+left: 310px;
+top: 320px;	
+}
+
+#ovento-item2{
+left: 330px;
+top: 380px;
+}
+
+#ovento-item:after{
+content: 'Letra Completa';
+}
+
+#ovento-item2:after{
+content: 'Sobre Ataulfo';
+}
+
+
+/* wilson vs noel */
+
+#wilsonvsnoel .perfildub:nth-child(1){
+	background-image: url(images/camaradas/wilson-fundo-repeat.jpg);
+}
+
+#wilsonvsnoel .perfildub:nth-child(2){
+	background-image: url(images/camaradas/noel-fundo-repeat.jpg);
+}
+
+#wilson-side {
+	left: 0px;
+}
+
+#noel-side {
+	right: 200px;
+}
+
+#perfilwilson .int-side{
+	left: 700px;
+}
+
+#perfilnoel .int-side{
+	right: 700px;
+}
+
+
+/* RAPAZ FOLGADO */
+
+#imagem-rapazfolgado{
+	top: 50px;
+	left: 90px;
+}
+
+#rapazfolgado .farpa-box:first-child {
+	top: 160px;
+	left: 470px;
+	width: 400px;
+}
+
+#rapazfolgado .farpa-box:nth-child(2) {
+	top: 100px;
+	left: 470px;
+	height: 110px;
+}
+
+#rapazfolgado .farpa-box:nth-child(3) {
+	top: 350px;
+	left: 600px;
+	height: 110px;
+}
+
+#rapazfolgado .farpa-box:nth-child(4) {
+	top: 420px;
+	left: 605px;
+	height: 110px;
+}
+
+
+#rapazfolgado .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 290px;
+}
+
+#rapazfolgado .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 276px;
+}
+
+#rapazfolgado .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 248px;
+}
+#rapazfolgado .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 199px;
+}
+
+#gif-rapazfolgado{
+	background-image: url(images/icons/play.png), url(gifs-videos/rapazfolgado.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 360px;
+	left: 210px;
+	cursor: pointer
+}
+
+
+#rapazfolgado-item{
+left: 350px;
+top: 380px;	
+}
+
+#rapazfolgado-item2{
+left: 370px;
+top: 430px;
+}
+
+#rapazfolgado-item:after{
+content: 'Letra Completa';
+}
+
+#rapazfolgado-item2:after{
+content: 'Sobre Noel';
+}
+
+
+/* mocinhodavila */
+
+#imagem-mocinhodavila{
+	top: 0px;
+	right: 200px;
+}
+
+#mocinhodavila .farpa-box:first-child {
+	top: 100px;
+	left: 140px;
+	width: 380px;
+}
+
+#mocinhodavila .farpa-box:nth-child(2) {
+	top: 20px;
+	left: 140px;
+	height: 110px;
+}
+
+#mocinhodavila .farpa-box:nth-child(3) {
+	top: 350px;
+	left: 80px;
+	height: 110px;
+}
+
+
+
+#mocinhodavila .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 196px;
+}
+
+#mocinhodavila .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 265px;
+}
+
+#mocinhodavila .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 225px;
+}
+#mocinhodavila .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 180px;
+}
+#mocinhodavila .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 250px;
+}
+
+
+#gif-mocinhodavila{
+	background-image: url(images/icons/play.png), url(gifs-videos/mocinhodavila.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 320px;
+	left: 590px;
+	cursor: pointer
+}
+
+
+#mocinhodavila-item{
+left: 730px;
+top: 340px;	
+}
+
+#mocinhodavila-item2{
+left: 755px;
+top: 400px;
+}
+
+#mocinhodavila-item:after{
+content: 'Letra Completa';
+}
+
+#mocinhodavila-item2:after{
+content: 'Sobre Wilson';
+}
+
+/* conversa fiada */
+
+#imagem-conversafiada{
+	top: 40px;
+	left: 70px;
+}
+
+#conversafiada .farpa-box:first-child {
+	top: 100px;
+	left: 470px;
+	width: 460px;
+}
+
+#conversafiada .farpa-box:nth-child(2) {
+	top: 30px;
+	left: 470px;
+	height: 110px;
+}
+
+#conversafiada .farpa-box:nth-child(3) {
+	top: 250px;
+	left: 600px;
+	height: 110px;
+}
+
+#conversafiada .farpa-box:nth-child(4) {
+	top: 355px;
+	left: 605px;
+	height: 110px;
+}
+
+
+#conversafiada .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 266px;
+}
+
+#conversafiada .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 185px;
+}
+
+#conversafiada .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 187px;
+}
+#conversafiada .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 164px;
+}
+#conversafiada .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 231px;
+}
+
+#gif-conversafiada{
+	background-image: url(images/icons/play.png), url(gifs-videos/conversafiada.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 340px;
+	left: 170px;
+	cursor: pointer
+}
+
+
+#conversafiada-item{
+left: 300px;
+top: 350px;	
+}
+
+#conversafiada-item2{
+left: 330px;
+top: 400px;
+}
+
+#conversafiada-item:after{
+content: 'Letra Completa';
+}
+
+#conversafiada-item2:after{
+content: 'Sobre Wilson';
+}
+
+/* palpite infeliz */
+
+#imagem-palpiteinfeliz{
+	top: 0px;
+	right: 200px;
+}
+
+#palpiteinfeliz .farpa-box:first-child {
+	top: 100px;
+	left: 140px;
+	width: 380px;
+}
+
+#palpiteinfeliz .farpa-box:nth-child(2) {
+	top: 20px;
+	left: 140px;
+	height: 110px;
+}
+
+#palpiteinfeliz .farpa-box:nth-child(3) {
+	top: 350px;
+	left: 80px;
+	height: 110px;
+}
+
+
+
+#palpiteinfeliz .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 282px;
+}
+
+#palpiteinfeliz .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 277px;
+}
+
+#palpiteinfeliz .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 221px;
+}
+#palpiteinfeliz .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 277px;
+}
+#palpiteinfeliz .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 314px;
+}
+
+
+#gif-palpiteinfeliz{
+	background-image: url(images/icons/play.png), url(gifs-videos/palpiteinfeliz.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 320px;
+	left: 590px;
+	cursor: pointer
+}
+
+
+#palpiteinfeliz-item{
+left: 730px;
+top: 340px;	
+}
+
+#palpiteinfeliz-item2{
+left: 755px;
+top: 400px;
+}
+
+#palpiteinfeliz-item:after{
+content: 'Letra Completa';
+}
+
+#palpiteinfeliz-item2:after{
+content: 'Sobre Noel';
+}
+
+
+/* frankenstein */
+
+#imagem-frankenstein{
+	top: 60px;
+	left: 70px;
+}
+
+#frankenstein .farpa-box:first-child {
+	top: 120px;
+	left: 520px;
+	width: 460px;
+}
+
+#frankenstein .farpa-box:nth-child(2) {
+	top: 50px;
+	left: 520px;
+	height: 110px;
+}
+
+#frankenstein .farpa-box:nth-child(3) {
+	top: 370px;
+	left: 600px;
+	height: 110px;
+}
+
+#frankenstein .farpa-box:nth-child(4) {
+	top: 355px;
+	left: 605px;
+	height: 110px;
+}
+
+
+#frankenstein .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 220px;
+}
+
+#frankenstein .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 295px;
+}
+
+#frankenstein .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 290px;
+}
+#frankenstein .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 242px;
+}
+#frankenstein .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 231px;
+}
+
+#gif-frankenstein{
+	background-image: url(images/icons/play.png), url(gifs-videos/frankenstein.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 340px;
+	left: 170px;
+	cursor: pointer
+}
+
+
+#frankenstein-item{
+left: 300px;
+top: 350px;	
+}
+
+#frankenstein-item2{
+left: 330px;
+top: 400px;
+}
+
+#frankenstein-item:after{
+content: 'Letra Completa';
+}
+
+#frankenstein-item2:after{
+content: 'Sobre Wilson';
+}
+
+
+/* terra de cego */
+
+#terradecego .farpa-box:first-child {
+	top: 10px;
+	left: 70px;
+	width: 350
+}
+
+#terradecego .farpa-box:nth-child(2) {
+	top: 120px;
+	right: 100px;
+	height: 110px;
+}
+
+#terradecego .farpa-box:nth-child(3) {
+	top: 350px;
+	left: 200px;
+	height: 110px;
+}
+
+
+.aline-right{
+direction: rtl;
+}
+
+
+#terradecego .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 185px;
+}
+
+#terradecego .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 160px;
+}
+
+#terradecego .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 188px;
+}
+
+#terradecego .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 230px;
+}
+#terradecego .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 160px;
+}
+#terradecego .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 235px;
+}
+
+#gif-convencida{
+	background-image: url(images/icons/play.png), url(gifs-videos/convencida.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 300px;
+	left: 600px;
+	cursor: pointer
+}
+
+#gif-terradecego{
+	background-image: url(images/icons/play.png), url(gifs-videos/terradecego.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 60px;
+	left: 500px;
+	cursor: pointer
+}
+
+#convencida-item{
+left: 740px;
+top: 320px;	
+}
+
+#terradecego-item{
+left: 630px;
+top: 70px;
+}
+
+#convencida-item:after{
+content: 'Letra Completa';
+}
+
+#terradecego-item:after{
+content: 'Letra Completa';
+}
+
+
+/* eterno enquanto dure */
+#eterno{
+	background-image: url(images/eterno-fundo-repeat.jpg);
+}
+
+
+#eterno .apresentation img{
+	position: absolute;
+}
+
+#eterno .apresentation h1{
+	font-family: Jackstory;
+	color: #fff;
+	font-size: 24px;
+	font-weight: normal;
+	margin-top:100px;
+	margin-left: 100px;
+	margin-bottom: 50px; 
+}
+
+#eterno .apresentation p{
+	width: 365px;
+	text-align: justify;
+	font-family: cuprum;
+	color: #fff;
+	float: left;
+	margin-left: 100px;
+	font-size: 16px;
+}
+
+#eterno .item-mais{
+	background-color: #d10022;
+}
+#eterno .item-mais:hover{
+background-color: #ff3333;
+}
+#eterno .item-mais:before{
+	border: solid 3px #d10022;
+}
+
+.heart { 
+	position: absolute;
+}
+.heart:before, .heart:after {
+	position: absolute;
+  content: "";
+	left: 14px;
+	top: 0;
+	width: 15px;
+	height: 24px;
+	opacity: 0;
+	background: #bf443d;
+	-moz-border-radius: 50px 50px 0 0;
+	border-radius: 50px 50px 0 0;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+
+}
+.heart:after { 
+	left: 0; 
+	-webkit-transform: rotate(45deg); 
+	-moz-transform: rotate(45deg); 
+	-ms-transform: rotate(45deg); 
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	-ms-transform-origin: 100% 100%;
+	-o-transform-origin: 100% 100%;
+	transform-origin :100% 100%;
+}
+
+#core1:before, #core1:after{
+	-webkit-animation:core1 5s infinite;
+	-webkit-animation-name:core1;
+	-moz-animation:core1 5s infinite;
+	-moz-animation-name:core1;
+}
+
+#core2:before, #core2:after{
+	-webkit-animation:core2 12s infinite;
+	-webkit-animation-name:core2;
+	-moz-animation:core2 12s infinite;
+	-moz-animation-name:core2;
+}
+
+#core3:before, #core3:after{
+	-webkit-animation:core3 5s infinite;
+	-webkit-animation-name:core3;
+	-moz-animation:core2 12s infinite;
+	-moz-animation-name:core2;
+}
+#core4:before, #core4:after{
+	-webkit-animation:core4 18s infinite;
+	-webkit-animation-name:core4;
+	-moz-animation:core4 18s infinite;
+	-moz-animation-name:core4;
+}
+#core5:before, #core5:after{
+	-webkit-animation:core5 10s infinite;
+	-webkit-animation-name:core5;
+	-moz-animation:core5 10s infinite;
+	-moz-animation-name:core5;
+}
+#core6:before, #core6:after{
+	-webkit-animation:core6 8s infinite;
+	-webkit-animation-name:core6;
+	-moz-animation:core6 8s infinite;
+	-moz-animation-name:core6;
+}
+
+#core2{
+	left: 200px;
+
+}
+#core3{
+	left: 400px;
+}
+
+#core4{
+	left: 600px;
+}
+
+#core5{
+	left: 800px;
+}
+
+#core6{
+	left: 1000px;
+}
+@-webkit-keyframes core1{
+	20%{		
+		background: #bf443d;
+		top:400px;
+		opacity: 1;
+	}
+	50%{
+		background: #000;
+	}
+	80%{ 	
+		background: #bf443d;
+		opacity: 1;
+	}
+	100%{
+		top:240px;
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes core2{
+	20%{		
+		background: #bf443d;
+		top:400px;
+		opacity: 1;
+	}
+	50%{
+		background: #000;
+	}
+	80%{ 	
+		background: #bf443d;
+		opacity: 1;
+	}
+	100%{
+		top:180px;
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes core3{
+	20%{		
+		background: #bf443d;
+		top:400px;
+		opacity: 1;
+	}
+	50%{
+		background: #000;
+	}
+	80%{ 	
+		background: #bf443d;
+		opacity: 1;
+	}
+	100%{
+		top:180px;
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes core4{
+	20%{		
+		background: #bf443d;
+		top:400px;
+		opacity: 1;
+	}
+	50%{
+		background: #000;
+	}
+	80%{ 	
+		background: #bf443d;
+		opacity: 1;
+	}
+	100%{
+		top:200px;
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes core5{
+	20%{		
+		background: #bf443d;
+		top:400px;
+		opacity: 1;
+	}
+	50%{
+		background: #000;
+	}
+	80%{ 	
+		background: #bf443d;
+		opacity: 1;
+	}
+	100%{
+		top:130px;
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes core6{
+	20%{		
+		background: #bf443d;
+		top:400px;
+		opacity: 1;
+	}
+	50%{
+		background: #000;
+	}
+	80%{ 	
+		background: #bf443d;
+		opacity: 1;
+	}
+	100%{
+		top:190px;
+		opacity: 0;
+	}
+}
+
+
+
+
+@-moz-keyframes core1{
+	20%{		
+		background: #bf443d;
+		top:400px;
+		opacity: 1;
+	}
+	50%{
+		background: #000;
+	}
+	80%{ 	
+		background: #bf443d;
+		opacity: 1;
+	}
+	100%{
+		top:240px;
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes core2{
+	20%{		
+		background: #bf443d;
+		top:400px;
+		opacity: 1;
+	}
+	50%{
+		background: #000;
+	}
+	80%{ 	
+		background: #bf443d;
+		opacity: 1;
+	}
+	100%{
+		top:180px;
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes core3{
+	20%{		
+		background: #bf443d;
+		top:400px;
+		opacity: 1;
+	}
+	50%{
+		background: #000;
+	}
+	80%{ 	
+		background: #bf443d;
+		opacity: 1;
+	}
+	100%{
+		top:180px;
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes core4{
+	20%{		
+		background: #bf443d;
+		top:400px;
+		opacity: 1;
+	}
+	50%{
+		background: #000;
+	}
+	80%{ 	
+		background: #bf443d;
+		opacity: 1;
+	}
+	100%{
+		top:200px;
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes core5{
+	20%{		
+		background: #bf443d;
+		top:400px;
+		opacity: 1;
+	}
+	50%{
+		background: #000;
+	}
+	80%{ 	
+		background: #bf443d;
+		opacity: 1;
+	}
+	100%{
+		top:130px;
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes core6{
+	20%{		
+		background: #bf443d;
+		top:400px;
+		opacity: 1;
+	}
+	50%{
+		background: #000;
+	}
+	80%{ 	
+		background: #bf443d;
+		opacity: 1;
+	}
+	100%{
+		top:190px;
+		opacity: 0;
+	}
+}
+/* ouça */
+
+#imagem-ouca{
+	top: 50px;
+	left: 90px;
+}
+
+#ouca .farpa-box:first-child {
+	top: 120px;
+	left: 470px;
+	width: 400px;
+}
+
+#ouca .farpa-box:nth-child(2) {
+	top: 50px;
+	left: 470px;
+	height: 110px;
+}
+
+#ouca .farpa-box:nth-child(3) {
+	top: 300px;
+	left: 600px;
+	height: 110px;
+}
+
+#ouca .farpa-box:nth-child(4) {
+	top: 380px;
+	right: 215px;
+	height: 110px;
+	width: 400px;
+}
+
+
+#ouca .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 110px;
+}
+
+#ouca .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 185px;
+}
+
+#ouca .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 130px;
+}
+#ouca .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 225px;
+}
+
+#gif-ouca{
+	background-image: url(images/icons/play.png), url(gifs-videos/ouca.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 360px;
+	left: 210px;
+	cursor: pointer
+}
+
+
+#ouca-item{
+left: 350px;
+top: 380px;	
+}
+
+#ouca-item2{
+left: 370px;
+top: 430px;
+}
+
+#ouca-item:after{
+content: 'Letra Completa';
+}
+
+#ouca-item2:after{
+content: 'Sobre Maysa';
+}
+
+/* dalva e herivelto */
+
+#dalvaeherivelto .perfildub:nth-child(1){
+	background-image: url(images/eterno/dalva-fundo-repeat.jpg);
+}
+
+#dalvaeherivelto .perfildub:nth-child(2){
+	background-image: url(images/eterno/herivelto-fundo-repeat.jpg);
+}
+
+#dalva-side {
+	left: 0px;
+}
+
+#herivelto-side {
+	right: 30px;
+	bottom: -4px;
+}
+
+#perfildalva .int-side{
+	left: 700px;
+}
+
+#perfilherivelto .int-side{
+	right: 700px;
+}
+
+
+/* tudo acabado */
+
+#imagem-tudoacabado{
+	top: 50px;
+	right: 200px;
+}
+
+#tudoacabado .farpa-box:first-child {
+	top: 200px;
+	left: 75px;
+	width: 465px;
+}
+
+#tudoacabado .farpa-box:nth-child(2) {
+	top: 120px;
+	left: 75px;
+	height: 110px;
+}
+
+#tudoacabado .farpa-box:nth-child(3) {
+	top: 390px;
+	right: 220px;
+	height: 110px;
+}
+
+#tudoacabado .farpa-box:nth-child(4) {
+	top: 470px;
+	right: 215px;
+	height: 120px;
+	width: 420px;
+}
+
+
+#tudoacabado .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 297px;
+}
+
+#tudoacabado .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 303px;
+}
+
+#tudoacabado .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 236px;
+}
+
+#tudoacabado .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 302px;
+}
+
+#gif-tudoacabado{
+	background-image: url(images/icons/play.png), url(gifs-videos/tudoacabado.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 390px;
+	left: 190px;
+	cursor: pointer
+}
+
+
+#tudoacabado-item{
+	left: 330px;
+	top: 410px;	
+}
+
+#tudoacabado-item2{
+	left: 355px;
+	top: 460px;
+}
+
+#tudoacabado-item:after{
+content: 'Letra Completa';
+}
+
+#tudoacabado-item2:after{
+content: 'Sobre Dalva';
+}
+
+
+/*  certo */
+
+#imagem-caminhocerto{
+	top: 60px;
+	left: 70px;
+}
+
+#caminhocerto .farpa-box:first-child {
+	top: 160px;
+	left: 520px;
+	width: 460px;
+}
+
+#caminhocerto .farpa-box:nth-child(2) {
+	top: 50px;
+	left: 520px;
+	height: 110px;
+}
+
+#caminhocerto .farpa-box:nth-child(3) {
+	top: 370px;
+	left: 600px;
+	height: 110px;
+}
+
+#caminhocerto .farpa-box:nth-child(4) {
+	top: 355px;
+	left: 605px;
+	height: 110px;
+}
+
+
+#caminhocerto .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 233px;
+}
+
+#caminhocerto .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 147px;
+}
+
+#caminhocerto .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 305px;
+}
+
+#caminhocerto .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 240px;
+}
+#caminhocerto .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 374px;
+}
+#caminhocerto .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 206px;
+}
+
+#gif-caminhocerto{
+	background-image: url(images/icons/play.png), url(gifs-videos/caminhocerto.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 340px;
+	left: 170px;
+	cursor: pointer
+}
+
+
+#caminhocerto-item{
+left: 300px;
+top: 350px;	
+}
+
+#caminhocerto-item2{
+left: 330px;
+top: 400px;
+}
+
+#caminhocerto-item:after{
+content: 'Letra Completa';
+}
+
+#caminhocerto-item2:after{
+content: 'Sobre Herivelto';
+}
+
+/* errei sim */
+
+#imagem-erreisim{
+	top: 0px;
+	right: 200px;
+}
+
+#erreisim .farpa-box:first-child {
+	top: 100px;
+	left: 140px;
+	width: 380px;
+}
+
+#erreisim .farpa-box:nth-child(2) {
+	top: 20px;
+	left: 140px;
+	height: 110px;
+}
+
+#erreisim .farpa-box:nth-child(3) {
+	top: 350px;
+	left: 80px;
+	height: 110px;
+}
+
+
+
+#erreisim .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 160px;
+}
+
+#erreisim .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 186px;
+}
+
+#erreisim .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 221px;
+}
+#erreisim .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 130px;
+}
+#erreisim .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 220px;
+}
+
+
+#gif-erreisim{
+	background-image: url(images/icons/play.png), url(gifs-videos/erreisim.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 320px;
+	left: 590px;
+	cursor: pointer
+}
+
+
+#erreisim-item{
+left: 730px;
+top: 340px;	
+}
+
+#erreisim-item2{
+left: 755px;
+top: 400px;
+}
+
+#erreisim-item:after{
+content: 'Letra Completa';
+}
+
+#erreisim-item2:after{
+content: 'Sobre Dalva';
+}
+
+
+/* falso amigo */
+
+#imagem-falsoamigo{
+	top: 30px;
+	left: 70px;
+}
+
+#falsoamigo .farpa-box:first-child {
+	top: 160px;
+	left: 520px;
+	width: 430px;
+}
+
+#falsoamigo .farpa-box:nth-child(2) {
+	top: 50px;
+	left: 520px;
+	height: 110px;
+}
+
+#falsoamigo .farpa-box:nth-child(3) {
+	top: 370px;
+	left: 600px;
+	height: 110px;
+}
+
+#falsoamigo .farpa-box:nth-child(4) {
+	top: 355px;
+	left: 605px;
+	height: 110px;
+}
+
+
+#falsoamigo .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 200px;
+}
+
+#falsoamigo .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 175px;
+}
+
+#falsoamigo .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 175px;
+}
+
+#falsoamigo .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 205px;
+}
+#falsoamigo .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 190px;
+}
+#falsoamigo .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 216px;
+}
+
+#gif-falsoamigo{
+	background-image: url(images/icons/play.png), url(gifs-videos/falsoamigo.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 340px;
+	left: 170px;
+	cursor: pointer
+}
+
+
+#falsoamigo-item{
+left: 300px;
+top: 350px;	
+}
+
+#falsoamigo-item2{
+left: 330px;
+top: 400px;
+}
+
+#falsoamigo-item:after{
+content: 'Letra Completa';
+}
+
+#falsoamigo-item2:after{
+content: 'Sobre Herivelto';
+}
+
+
+/* palhaco */
+
+#imagem-palhaco{
+	top: 0px;
+	right: 200px;
+}
+
+#palhaco .farpa-box:first-child {
+	top: 100px;
+	left: 140px;
+	width: 380px;
+}
+
+#palhaco .farpa-box:nth-child(2) {
+	top: 20px;
+	left: 140px;
+	height: 110px;
+}
+
+#palhaco .farpa-box:nth-child(3) {
+	top: 350px;
+	left: 80px;
+	height: 110px;
+}
+
+
+
+#palhaco .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 180px;
+}
+
+#palhaco .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 212px;
+}
+
+#palhaco .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 272px;
+}
+#palhaco .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 200px;
+}
+#palhaco .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 224px;
+}
+
+
+#gif-palhaco{
+	background-image: url(images/icons/play.png), url(gifs-videos/palhaco.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 320px;
+	left: 590px;
+	cursor: pointer
+}
+
+
+#palhaco-item{
+left: 730px;
+top: 340px;	
+}
+
+#palhaco-item2{
+left: 755px;
+top: 400px;
+}
+
+#palhaco-item:after{
+content: 'Letra Completa';
+}
+
+#palhaco-item2:after{
+content: 'Sobre Dalva';
+}
+
+
+/* perdoar */
+
+#perdoar .farpa-box:first-child {
+	top: 10px;
+	left: 70px;
+	width: 350
+}
+
+#perdoar .farpa-box:nth-child(2) {
+	top: 120px;
+	right: 100px;
+	height: 110px;
+}
+
+#perdoar .farpa-box:nth-child(3) {
+	top: 350px;
+	left: 200px;
+	height: 110px;
+}
+
+
+.aline-right{
+direction: rtl;
+}
+
+
+#perdoar .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 224px;
+}
+
+#perdoar .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 268px;
+}
+
+#perdoar .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 315px;
+}
+
+#perdoar .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 180px;
+}
+#perdoar .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 195px;
+}
+#perdoar .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 222px;
+}
+#perdoar .farpa-box:nth-child(3) .farpa:nth-child(4){
+	width: 160px;
+}
+
+#gif-poeira{
+	background-image: url(images/icons/play.png), url(gifs-videos/poeira.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 300px;
+	left: 600px;
+	cursor: pointer
+}
+
+#gif-perdoar{
+	background-image: url(images/icons/play.png), url(gifs-videos/perdoar.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 60px;
+	left: 500px;
+	cursor: pointer
+}
+
+#poeira-item{
+left: 740px;
+top: 320px;	
+}
+
+#perdoar-item{
+left: 630px;
+top: 70px;
+}
+
+#poeira-item:after{
+content: 'Letra Completa';
+}
+
+#perdoar-item:after{
+content: 'Letra Completa';
+}
+
+
+/* princesa */
+
+#imagem-princesa{
+	top: 50px;
+	right: 200px;
+}
+
+#princesa .farpa-box:first-child {
+	top: 200px;
+	left: 75px;
+	width: 465px;
+}
+
+#princesa .farpa-box:nth-child(2) {
+	top: 120px;
+	left: 75px;
+	height: 110px;
+}
+
+#princesa .farpa-box:nth-child(3) {
+	top: 390px;
+	right: 220px;
+	height: 110px;
+}
+
+#princesa .farpa-box:nth-child(4) {
+	top: 470px;
+	right: 215px;
+	height: 120px;
+	width: 420px;
+}
+
+
+#princesa .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 155px;
+}
+
+#princesa .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 195px;
+}
+
+#princesa .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 195px;
+}
+
+#princesa .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 195px;
+}
+
+#princesa .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 207px;
+}
+
+#gif-princesa{
+	background-image: url(images/icons/play.png), url(gifs-videos/princesa.gif);
+	background-position: 85px 78px, -83px -48px;
+	background-repeat: no-repeat;
+	top: 390px;
+	left: 190px;
+	cursor: pointer
+}
+
+
+#princesa-item{
+	left: 330px;
+	top: 410px;	
+}
+
+#princesa-item2{
+	left: 355px;
+	top: 460px;
+}
+
+#princesa-item:after{
+content: 'Letra Completa';
+}
+
+#princesa-item2:after{
+content: 'Sobre MC Marcinho';
+}
+
+
+/* desprezo */
+
+#imagem-desprezo{
+	top: 30px;
+	left: 70px;
+}
+
+#desprezo .farpa-box:first-child {
+	top: 160px;
+	left: 520px;
+	width: 430px;
+}
+
+#desprezo .farpa-box:nth-child(2) {
+	top: 50px;
+	left: 520px;
+	height: 110px;
+}
+
+#desprezo .farpa-box:nth-child(3) {
+	top: 370px;
+	left: 600px;
+	height: 110px;
+}
+
+#desprezo .farpa-box:nth-child(4) {
+	top: 355px;
+	left: 605px;
+	height: 110px;
+}
+
+
+#desprezo .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 90px;
+}
+
+#desprezo .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 175px;
+}
+
+#desprezo .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 228px;
+}
+
+#desprezo .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 170px;
+}
+#desprezo .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 208px;
+}
+#desprezo .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 280px;
+}
+
+#gif-desprezo{
+	background-image: url(images/icons/play.png), url(gifs-videos/desprezo.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 340px;
+	left: 170px;
+	cursor: pointer
+}
+
+
+#desprezo-item{
+left: 300px;
+top: 350px;	
+}
+
+#desprezo-item2{
+left: 330px;
+top: 400px;
+}
+
+#desprezo-item:after{
+content: 'Letra Completa';
+}
+
+#desprezo-item2:after{
+content: 'Sobre Mc Cacau';
+}
+
+
+.caminho-eterno .int-caminho{
+	border-top: #fe9692 2px solid;
+	border-bottom: #fe9692 2px solid;
+	background-image: url(images/bottom-caminhos-eterno.png);
+}
+
+.caminho-eterno .list-caminho li{
+	margin-right: 262px;
+}
+
+.caminho-eterno .list-caminho li:last-child{
+	margin-right: 0px;
+}
+
+.caminho-eterno .list-caminho li a{
+	color:#fe9692;
+	text-decoration: none;
+}
+
+
+/* linha de frente */
+
+
+#linha{
+	background-image: url(images/luta-fundo-repeat.jpg);
+}
+
+#linha .apresentation h1{
+	font-family: Jackstory;
+	color: #fff;
+	font-size: 24px;
+	font-weight: normal;
+	margin-top:100px;
+	margin-left: 100px;
+	margin-bottom: 50px; 
+}
+
+#linha .apresentation p{
+	width: 365px;
+	text-align: justify;
+	font-family: cuprum;
+	color: #fff;
+	float: left;
+	margin-left: 100px;
+	font-size: 16px;
+}
+
+#linha .item-mais{
+	background-color: #3d0100;
+}
+#linha .item-mais:hover{
+background-color: #d70200;
+}
+#linha .item-mais:before{
+	border: solid 3px #d70200;
+}
+
+.tank{
+	position: absolute;
+	width: 50px;
+	height: 100px;
+}
+
+#tank1{
+	-webkit-animation:tank1 50s infinite linear;
+	-webkit-animation-name:tank1;
+	-moz-animation:tank1 50s infinite linear;
+	-moz-animation-name:tank1;
+	bottom: 140px;
+}
+
+#tank2{
+	-webkit-animation:tank1 70s infinite linear;
+	-webkit-animation-name:tank1;
+	-moz-animation:tank1 70s infinite linear;
+	-moz-animation-name:tank1;
+	bottom: 190px;
+}
+
+#tank3{
+	-webkit-animation:tank1 60s infinite linear;
+	-webkit-animation-name:tank1;
+	-moz-animation:tank1 60s infinite linear;
+	-moz-animation-name:tank1;
+	bottom: 250px;
+}
+
+@-webkit-keyframes tank1{
+	0%{	
+		left: -200px;
+	}
+	100%{
+		left:1400px;
+	}
+}
+
+@-webkit-keyframes tank2{
+	0%{	
+		left: -100px;
+	}
+	100%{
+		left:1500px;
+	}
+}
+
+@-webkit-keyframes tank2{
+	0%{	
+		left: -300px;
+	}
+	100%{
+		left:1200px;
+	}
+}
+
+@-moz-keyframes tank1{
+	0%{	
+		left: -200px;
+	}
+	100%{
+		left:1400px;
+	}
+}
+
+@-moz-keyframes tank2{
+	0%{	
+		left: -100px;
+	}
+	100%{
+		left:1500px;
+	}
+}
+
+@-moz-keyframes tank2{
+	0%{	
+		left: -300px;
+	}
+	100%{
+		left:1200px;
+	}
+}
+
+
+/* roda viva */
+
+#imagem-rodaviva{
+	top: 0px;
+	left: 0px;
+}
+
+#rodaviva .farpa-box:first-child {
+	top: 100px;
+	right: 250px;
+	width: 400px;
+}
+
+#rodaviva .farpa-box:nth-child(2) {
+	top: 30px;
+	right: 270px;
+	height: 110px;
+}
+
+#rodaviva .farpa-box:nth-child(3) {
+	top: 290px;
+	left: 105px;
+	height: 110px;
+}
+
+#rodaviva .farpa-box:nth-child(4) {
+	top: 430px;
+	left: 105px;
+	height: 110px;
+	width: 400px;
+}
+
+
+#rodaviva .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 232px;
+}
+
+#rodaviva .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 226px;
+}
+
+#rodaviva .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 190px;
+}
+#rodaviva .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 200px;
+}
+#rodaviva .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 236px;
+}
+#rodaviva .farpa-box:nth-child(3) .farpa:nth-child(4){
+	width: 208px;
+}
+
+#gif-rodaviva{
+	background-image: url(images/icons/play.png), url(gifs-videos/rodaviva.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 360px;
+	right: 350px;
+	cursor: pointer
+}
+
+
+#rodaviva-item{
+left: 787px;
+top: 380px;	
+}
+
+#rodaviva-item2{
+left: 811px;
+top: 430px;
+}
+
+#rodaviva-item:after{
+content: 'Letra Completa';
+}
+
+#rodaviva-item2:after{
+content: 'Sobre Chico';
+}
+
+
+/* apesar de você */
+
+#imagem-apesardevoce{
+	top: -30px;
+	right: 300px;
+}
+
+#apesardevoce .farpa-box:first-child {
+	top: 150px;
+	left: 75px;
+	width: 380px;
+}
+
+#apesardevoce .farpa-box:nth-child(2) {
+	top: 60px;
+	left: 75px;
+	height: 110px;
+}
+
+#apesardevoce .farpa-box:nth-child(3) {
+	top: 300px;
+	right: 220px;
+	height: 110px;
+}
+
+#apesardevoce .farpa-box:nth-child(4) {
+	top: 400px;
+	right: 215px;
+	height: 120px;
+	width: 450px;
+}
+
+
+#apesardevoce .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 120px;
+}
+
+#apesardevoce .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 216px;
+}
+
+#apesardevoce .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 128px;
+}
+
+#apesardevoce .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 162px;
+}
+
+#apesardevoce .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 108px;
+}
+
+#gif-apesardevoce{
+	background-image: url(images/icons/play.png), url(gifs-videos/apesardevoce.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 360px;
+	left: 150px;
+	cursor: pointer
+}
+
+
+#apesardevoce-item{
+	left: 290px;
+	top: 380px;	
+}
+
+#apesardevoce-item2{
+	left: 310px;
+	top: 430px;
+}
+
+#apesardevoce-item:after{
+content: 'Letra Completa';
+}
+
+#apesardevoce-item2:after{
+content: 'Sobre Chico';
+}
+
+/* calice */
+
+#imagem-calice{
+	top: 0px;
+	left: 100px;
+}
+
+#calice .farpa-box:first-child {
+	top: 100px;
+	right: 250px;
+	width: 400px;
+}
+
+#calice .farpa-box:nth-child(2) {
+	top: 30px;
+	right: 270px;
+	height: 110px;
+}
+
+#calice .farpa-box:nth-child(3) {
+	top: 290px;
+	right: 205px;
+	height: 110px;
+}
+
+#calice .farpa-box:nth-child(4) {
+	top: 360px;
+	right: 200px;
+	height: 110px;
+	width: 460px;
+}
+
+
+#calice .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 231px;
+}
+
+#calice .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 191px;
+}
+
+#calice .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 244px;
+}
+#calice .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 252px;
+}
+
+#gif-calice{
+	background-image: url(images/icons/play.png), url(gifs-videos/calice.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 360px;
+	left: 150px;
+	cursor: pointer
+}
+
+
+#calice-item{
+left: 287px;
+top: 380px;	
+}
+
+#calice-item2{
+left: 311px;
+top: 430px;
+}
+
+#calice-item:after{
+content: 'Letra Completa';
+}
+
+#calice-item2:after{
+content: 'Sobre Chico';
+}
+
+
+/* pra não dizer */
+
+#imagem-pranaodizer{
+	top: 50px;
+	right: 200px;
+}
+
+#pranaodizer .farpa-box:first-child {
+	top: 200px;
+	left: 75px;
+	width: 465px;
+}
+
+#pranaodizer .farpa-box:nth-child(2) {
+	top: 120px;
+	left: 75px;
+	height: 110px;
+}
+
+#pranaodizer .farpa-box:nth-child(3) {
+	top: 390px;
+	right: 220px;
+	height: 110px;
+}
+
+#pranaodizer .farpa-box:nth-child(4) {
+	top: 470px;
+	right: 215px;
+	height: 120px;
+	width: 420px;
+}
+
+
+#pranaodizer .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 175px;
+}
+
+#pranaodizer .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 138px;
+}
+
+#pranaodizer .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 206px;
+}
+
+#pranaodizer .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 130px;
+}
+
+#pranaodizer .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 175px;
+}
+#pranaodizer .farpa-box:nth-child(3) .farpa:nth-child(4){
+	width: 139px;
+}
+
+#gif-pranaodizer{
+	background-image: url(images/icons/play.png), url(gifs-videos/pranaodizer.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 390px;
+	left: 190px;
+	cursor: pointer
+}
+
+
+#pranaodizer-item{
+	left: 330px;
+	top: 410px;	
+}
+
+#pranaodizer-item2{
+	left: 355px;
+	top: 460px;
+}
+
+#pranaodizer-item:after{
+content: 'Letra Completa';
+}
+
+#pranaodizer-item2:after{
+content: 'Sobre Geraldo Vandré';
+}
+
+
+
+/* bebado equilibrista */
+
+#imagem-bebado{
+	top: 0px;
+	left: 100px;
+}
+
+#bebado .farpa-box:first-child {
+	top: 100px;
+	right: 250px;
+	width: 400px;
+}
+
+#bebado .farpa-box:nth-child(2) {
+	top: 30px;
+	right: 270px;
+	height: 110px;
+}
+
+#bebado .farpa-box:nth-child(3) {
+	top: 290px;
+	right: 205px;
+	height: 110px;
+}
+
+#bebado .farpa-box:nth-child(4) {
+	top: 360px;
+	right: 200px;
+	height: 110px;
+	width: 460px;
+}
+
+
+#bebado .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 213px;
+}
+
+#bebado .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 162px;
+}
+
+#bebado .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 279px;
+}
+#bebado .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 200px;
+}
+
+#gif-bebado{
+	background-image: url(images/icons/play.png), url(gifs-videos/bebado.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 320px;
+	left: 150px;
+	cursor: pointer
+}
+
+
+#bebado-item{
+left: 287px;
+top: 340px;	
+}
+
+#bebado-item2{
+left: 311px;
+top: 390px;
+}
+
+#bebado-item:after{
+content: 'Letra Completa';
+}
+
+#bebado-item2:after{
+content: 'Sobre Aldir e João Bosco';
+}
+
+
+/* eu acredito na rapazeada */
+
+#imagem-euacredito{
+	top: 50px;
+	right: 200px;
+}
+
+#euacredito .farpa-box:first-child {
+	top: 200px;
+	left: 75px;
+	width: 465px;
+}
+
+#euacredito .farpa-box:nth-child(2) {
+	top: 120px;
+	left: 75px;
+	height: 110px;
+}
+
+#euacredito .farpa-box:nth-child(3) {
+	top: 390px;
+	right: 220px;
+	height: 110px;
+}
+
+#euacredito .farpa-box:nth-child(4) {
+	top: 470px;
+	right: 215px;
+	height: 120px;
+	width: 420px;
+}
+
+
+#euacredito .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 205px;
+}
+
+#euacredito .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 293px;
+}
+
+#euacredito .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 196px;
+}
+
+#euacredito .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 160px;
+}
+
+#euacredito .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 210px;
+}
+#euacredito .farpa-box:nth-child(3) .farpa:nth-child(4){
+	width: 230px;
+}
+
+#gif-euacredito{
+	background-image: url(images/icons/play.png), url(gifs-videos/euacredito.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 390px;
+	left: 190px;
+	cursor: pointer
+}
+
+
+#euacredito-item{
+	left: 330px;
+	top: 410px;	
+}
+
+#euacredito-item2{
+	left: 355px;
+	top: 460px;
+}
+
+#euacredito-item:after{
+content: 'Letra Completa';
+}
+
+#euacredito-item2:after{
+content: 'Sobre Gonzaguinha';
+}
+
+
+/* aluga-se */
+
+#imagem-alugase{
+	top:50px;
+	left: 150px;
+}
+
+#alugase .farpa-box:first-child {
+	top: 150px;
+	right: 250px;
+	width: 400px;
+}
+
+#alugase .farpa-box:nth-child(2) {
+	top: 70px;
+	right: 270px;
+	height: 110px;
+}
+
+#alugase .farpa-box:nth-child(3) {
+	top: 330px;
+	left: 105px;
+	height: 110px;
+}
+
+#alugase .farpa-box:nth-child(4) {
+	top: 400px;
+	left: 105px;
+	height: 110px;
+	width: 400px;
+}
+
+
+#alugase .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 276px;
+}
+
+#alugase .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 226px;
+}
+
+#alugase .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 232px;
+}
+#alugase .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 255px;
+}
+
+#gif-alugase{
+	background-image: url(images/icons/play.png), url(gifs-videos/alugase.gif);
+	background-position: 85px 78px, -50px 0px;
+	background-repeat: no-repeat;
+	top: 360px;
+	right: 350px;
+	cursor: pointer
+}
+
+
+#alugase-item{
+left: 787px;
+top: 380px;	
+}
+
+#alugase-item2{
+left: 811px;
+top: 430px;
+}
+
+#alugase-item:after{
+content: 'Letra Completa';
+}
+
+#alugase-item2:after{
+content: 'Sobre Raul';
+}
+
+
+/* coca cola */
+
+#imagem-cocacola{
+	top: -30px;
+	right: 300px;
+}
+
+#cocacola .farpa-box:first-child {
+	top: 150px;
+	left: 75px;
+	width: 380px;
+}
+
+#cocacola .farpa-box:nth-child(2) {
+	top: 60px;
+	left: 75px;
+	height: 110px;
+}
+
+#cocacola .farpa-box:nth-child(3) {
+	top: 300px;
+	right: 220px;
+	height: 110px;
+}
+
+#cocacola .farpa-box:nth-child(4) {
+	top: 400px;
+	right: 215px;
+	height: 120px;
+	width: 450px;
+}
+
+
+#cocacola .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 299px;
+}
+
+#cocacola .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 170px;
+}
+#cocacola .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 273px;
+}
+
+#cocacola .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 170px;
+}
+
+#cocacola .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 222px;
+}
+
+#cocacola .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 177px;
+}
+
+#cocacola .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 180px;
+}
+
+#gif-cocacola{
+	background-image: url(images/icons/play.png), url(gifs-videos/cocacola.gif);
+	background-position: 85px 78px, -10px 0px;
+	background-repeat: no-repeat;
+	top: 380px;
+	left: 150px;
+	cursor: pointer
+}
+
+
+#cocacola-item{
+	left: 290px;
+	top: 400px;	
+}
+
+#cocacola-item2{
+	left: 310px;
+	top: 450px;
+}
+
+#cocacola-item:after{
+content: 'Letra Completa';
+}
+
+#cocacola-item2:after{
+content: 'Sobre Legião Urbana';
+}
+
+
+/* que pais é esse */
+
+#imagem-quepais{
+	top: 0px;
+	left: 100px;
+}
+
+#quepais .farpa-box:first-child {
+	top: 100px;
+	right: 250px;
+	width: 400px;
+}
+
+#quepais .farpa-box:nth-child(2) {
+	top: 30px;
+	right: 270px;
+	height: 110px;
+}
+
+#quepais .farpa-box:nth-child(3) {
+	top: 260px;
+	right: 205px;
+	height: 110px;
+}
+
+#quepais .farpa-box:nth-child(4) {
+	top: 360px;
+	right: 200px;
+	height: 110px;
+	width: 460px;
+}
+
+
+#quepais .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 248px;
+}
+
+#quepais .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 320px;
+}
+
+#quepais .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 203px;
+}
+#quepais .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 270px;
+}
+#quepais .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 243px;
+}
+
+#gif-quepais{
+	background-image: url(images/icons/play.png), url(gifs-videos/quepais.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 320px;
+	left: 150px;
+	cursor: pointer
+}
+
+
+#quepais-item{
+left: 287px;
+top: 340px;	
+}
+
+#quepais-item2{
+left: 311px;
+top: 390px;
+}
+
+#quepais-item:after{
+content: 'Letra Completa';
+}
+
+#quepais-item2:after{
+content: 'Sobre Legião Urbana';
+}
+
+
+/* brasil */
+
+#imagem-brasil{
+	top: 50px;
+	right: 200px;
+}
+
+#brasil .farpa-box:first-child {
+	top: 200px;
+	left: 75px;
+	width: 465px;
+}
+
+#brasil .farpa-box:nth-child(2) {
+	top: 90px;
+	left: 75px;
+	height: 110px;
+}
+
+#brasil .farpa-box:nth-child(3) {
+	top: 390px;
+	right: 220px;
+	height: 110px;
+}
+
+#brasil .farpa-box:nth-child(4) {
+	top: 470px;
+	right: 215px;
+	height: 120px;
+	width: 420px;
+}
+
+
+#brasil .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 180px;
+}
+
+#brasil .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 165px;
+}
+
+#brasil .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 165px;
+}
+
+#brasil .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 219px;
+}
+
+#brasil .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 163px;
+}
+
+#brasil .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 114px;
+}
+
+#gif-brasil{
+	background-image: url(images/icons/play.png), url(gifs-videos/brasil.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 390px;
+	left: 190px;
+	cursor: pointer
+}
+
+
+#brasil-item{
+	left: 330px;
+	top: 410px;	
+}
+
+#brasil-item2{
+	left: 355px;
+	top: 460px;
+}
+
+#brasil-item:after{
+content: 'Letra Completa';
+}
+
+#brasil-item2:after{
+content: 'Sobre Cazuza';
+}
+
+
+/* homem na estrada */
+
+#imagem-homem{
+	top:30px;
+	left: 100px;
+}
+
+#homem .farpa-box:first-child {
+	top: 170px;
+	right: 250px;
+	width: 400px;
+}
+
+#homem .farpa-box:nth-child(2) {
+	top: 70px;
+	right: 270px;
+	height: 110px;
+}
+
+#homem .farpa-box:nth-child(3) {
+	top: 330px;
+	left: 105px;
+	height: 110px;
+}
+
+#homem .farpa-box:nth-child(4) {
+	top: 440px;
+	left: 105px;
+	height: 110px;
+	width: 400px;
+}
+
+
+#homem .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 177px;
+}
+
+#homem .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 180px;
+}
+
+#homem .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 152px;
+}
+
+#homem .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 342px;
+}
+#homem .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 171px;
+}
+#homem .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 160px;
+}
+
+#gif-homem{
+	background-image: url(images/icons/play.png), url(gifs-videos/homem.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 360px;
+	right: 350px;
+	cursor: pointer
+}
+
+
+#homem-item{
+left: 787px;
+top: 380px;	
+}
+
+#homem-item2{
+left: 811px;
+top: 430px;
+}
+
+#homem-item:after{
+content: 'Letra Completa';
+}
+
+#homem-item2:after{
+content: 'Racionais MCs';
+}
+
+
+/* xibom */
+
+#imagem-xibom{
+	top: 0px;
+	right: 200px;
+}
+
+#xibom .farpa-box:first-child {
+	top: 150px;
+	left: 75px;
+	width: 465px;
+}
+
+#xibom .farpa-box:nth-child(2) {
+	top: 50px;
+	left: 75px;
+	height: 110px;
+}
+
+#xibom .farpa-box:nth-child(3) {
+	top: 390px;
+	right: 220px;
+	height: 110px;
+}
+
+#xibom .farpa-box:nth-child(4) {
+	top: 470px;
+	right: 215px;
+	height: 120px;
+	width: 420px;
+}
+
+
+#xibom .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 160px;
+}
+
+#xibom .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 185px;
+}
+
+#xibom .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 190px;
+}
+
+#xibom .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 280px;
+}
+
+#xibom .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 145px;
+}
+
+#xibom .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 155px;
+}
+
+#gif-xibom{
+	background-image: url(images/icons/play.png), url(gifs-videos/xibom.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 350px;
+	left: 190px;
+	cursor: pointer
+}
+
+
+#xibom-item{
+	left: 330px;
+	top: 380px;	
+}
+
+#xibom-item2{
+	left: 355px;
+	top: 430px;
+}
+
+#xibom-item:after{
+content: 'Letra Completa';
+}
+
+#xibom-item2:after{
+content: 'Sobre As Meninas';
+}
+
+
+
+/* ate quando */
+
+#imagem-atequando{
+	top: 30px;
+	left: 70px;
+}
+
+#atequando .farpa-box:first-child {
+	top: 140px;
+	left: 520px;
+	width: 430px;
+}
+
+#atequando .farpa-box:nth-child(2) {
+	top: 50px;
+	left: 520px;
+	height: 110px;
+}
+
+#atequando .farpa-box:nth-child(3) {
+	top: 370px;
+	left: 600px;
+	height: 110px;
+}
+
+
+
+#atequando .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 210px;
+}
+
+#atequando .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 210px;
+}
+
+
+#atequando .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 230px;
+}
+#atequando .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 145px;
+}
+#atequando .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 290px;
+}
+
+#gif-atequando{
+	background-image: url(images/icons/play.png), url(gifs-videos/atequando.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 340px;
+	left: 170px;
+	cursor: pointer
+}
+
+
+#atequando-item{
+left: 300px;
+top: 350px;	
+}
+
+#atequando-item2{
+left: 330px;
+top: 400px;
+}
+
+#atequando-item:after{
+content: 'Letra Completa';
+}
+
+#atequando-item2:after{
+content: 'Sobre Gabriel O Pensador';
+}
+
+
+
+/* mordido */
+
+#imagem-mordido{
+	top: 0px;
+	right: 200px;
+}
+
+#mordido .farpa-box:first-child {
+	top: 150px;
+	left: 75px;
+	width: 465px;
+}
+
+#mordido .farpa-box:nth-child(2) {
+	top: 50px;
+	left: 75px;
+	height: 110px;
+}
+
+#mordido .farpa-box:nth-child(3) {
+	top: 300px;
+	right: 220px;
+	height: 110px;
+}
+
+#mordido .farpa-box:nth-child(4) {
+	top: 470px;
+	right: 215px;
+	height: 120px;
+	width: 420px;
+}
+
+
+#mordido .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 240px;
+}
+
+#mordido .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 290px;
+}
+
+#mordido .farpa-box:nth-child(2) .farpa:nth-child(3){
+	width: 259px;
+}
+
+#mordido .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 260px;
+}
+
+#mordido .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 260px;
+}
+
+#mordido .farpa-box:nth-child(3) .farpa:nth-child(3){
+	width: 220px;
+}
+
+#mordido .farpa-box:nth-child(3) .farpa:nth-child(4){
+	width: 245px;
+}
+
+
+#gif-mordido{
+	background-image: url(images/icons/play.png), url(gifs-videos/mordido.gif);
+	background-position: 85px 78px, 0px -15px;
+	background-repeat: no-repeat;
+	top: 350px;
+	left: 190px;
+	cursor: pointer
+}
+
+
+#mordido-item{
+	left: 330px;
+	top: 380px;	
+}
+
+#mordido-item2{
+	left: 355px;
+	top: 430px;
+}
+
+#mordido-item:after{
+content: 'Letra Completa';
+}
+
+#mordido-item2:after{
+content: 'Sobre Apanhador Só';
+}
+
+
+/* povo novo */
+
+#imagem-povonovo{
+	top: 30px;
+	left: 70px;
+}
+
+#povonovo .farpa-box:first-child {
+	top: 140px;
+	left: 520px;
+	width: 430px;
+}
+
+#povonovo .farpa-box:nth-child(2) {
+	top: 50px;
+	left: 520px;
+	height: 110px;
+}
+
+#povonovo .farpa-box:nth-child(3) {
+	top: 370px;
+	left: 600px;
+	height: 110px;
+}
+
+
+
+#povonovo .farpa-box:nth-child(2) .farpa:nth-child(1){
+	width: 210px;
+}
+
+#povonovo .farpa-box:nth-child(2) .farpa:nth-child(2){
+	width: 230px;
+}
+
+
+#povonovo .farpa-box:nth-child(3) .farpa:nth-child(1){
+	width: 240px;
+}
+#povonovo .farpa-box:nth-child(3) .farpa:nth-child(2){
+	width: 160px;
+}
+
+#gif-povonovo{
+	background-image: url(images/icons/play.png), url(gifs-videos/povonovo.gif);
+	background-position: 85px 78px, 0px 0px;
+	background-repeat: no-repeat;
+	top: 340px;
+	left: 170px;
+	cursor: pointer
+}
+
+
+#povonovo-item{
+left: 300px;
+top: 350px;	
+}
+
+#povonovo-item2{
+left: 330px;
+top: 400px;
+}
+
+#povonovo-item:after{
+content: 'Letra Completa';
+}
+
+#povonovo-item2:after{
+content: 'Sobre Tom Zé';
+}
+
+
+.caminho-linha .int-caminho{
+	border-top: #e23c3a 2px solid;
+	border-bottom: #e23c3a 2px solid;
+	background-image: url(images/bottom-caminhos-linha.png);
+}
+
+.caminho-linha .list-caminho li{
+	margin-right: 347px;
+}
+
+.caminho-linha .list-caminho li:last-child{
+	margin-right: 0px;
+}
+
+.caminho-linha .list-caminho li a{
+	color:#e23c3a;
+	text-decoration: none;
+}
+
+/* pra farperar */
+#pra-farpear{
+	background-image: url(images/compartilhar-fundo-repeat.jpg);
+}
+
+.farpa-iner{
+	width: 1160px;
+	margin: 0 auto;
+	min-height: 200px
+}
+
+#pra-farpear h1{
+	font-family: Jackstory;
+	color: #fff;
+	font-size: 24px;
+	font-weight: normal;
+	margin-top:100px;
+	margin-left: 100px;
+	margin-bottom: 20px; 
+}
+.farpear-chamada{
+	width: 500px;
+	height: 100px;
+	text-align: center;
+	font-family: cuprum;
+	color: #fff;
+	float: left;
+	font-size: 18px;
+	margin-left: 250px;
+}
+#pra-farpear h1{
+	text-align: center;
+	margin-left: 100px;
+	width: 800px;
+}
+
+.compartilhar-iner{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.list-farpear li{
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+
